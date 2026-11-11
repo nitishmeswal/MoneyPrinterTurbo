@@ -1,0 +1,110 @@
+{
+ "id": "f15-flags-sf",
+ "idea": "bracket-flags",
+ "variant": 2,
+ "title": "Semifinals: Who Advances?",
+ "subtitle": "World Duel",
+ "durationSec": 32,
+ "minSec": 22,
+ "maxSec": 40,
+ "hud": "duels",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1100,
+  "arenas": [
+   {
+    "cx": 255,
+    "cy": 950
+   },
+   {
+    "cx": 680,
+    "cy": 950
+   }
+  ],
+  "rings": [
+   {
+    "arena": 0,
+    "R": 190,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     90,
+     26
+    ],
+    "rot": -50
+   },
+   {
+    "arena": 1,
+    "R": 190,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     135,
+     26
+    ],
+    "rot": 50
+   }
+  ],
+  "balls": [
+   {
+    "flag": "JP",
+    "name": "JP",
+    "hex": "#FFFFFF",
+    "r": 22,
+    "speed": 650,
+    "arena": 0
+   },
+   {
+    "flag": "VN",
+    "name": "VN",
+    "hex": "#FFFFFF",
+    "r": 22,
+    "speed": 650,
+    "arena": 0
+   },
+   {
+    "flag": "FR",
+    "name": "FR",
+    "hex": "#FFFFFF",
+    "r": 22,
+    "speed": 650,
+    "arena": 1
+   },
+   {
+    "flag": "ES",
+    "name": "ES",
+    "hex": "#FFFFFF",
+    "r": 22,
+    "speed": 650,
+    "arena": 1
+   }
+  ],
+  "collide": true,
+  "win": "duels"
+ },
+ "choice": {
+  "label": "Pick a winner"
+ },
+ "payoff": {
+  "duels": "TO THE {stage}!",
+  "sub": ""
+ },
+ "stage": "FINAL",
+ "fromPrev": {
+  "id": "f14-flags-qf",
+  "take": 4,
+  "winners": true
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 115001,
+ "day": 2
+}

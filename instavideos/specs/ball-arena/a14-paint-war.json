@@ -1,0 +1,68 @@
+{
+ "id": "a14-paint-war",
+ "idea": "paint-war",
+ "variant": 3,
+ "title": "Which Colour Takes Over?",
+ "subtitle": "every hit paints the wall",
+ "durationSec": 35,
+ "hud": "paint",
+ "seeds": 160,
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 30,
+    "n": 72,
+    "kind": "paint"
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 24,
+    "speed": 850
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 24,
+    "speed": 850
+   },
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 24,
+    "speed": 850
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 24,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "win": "most_paint"
+ },
+ "choice": {
+  "label": "Pick a colour"
+ },
+ "payoff": {
+  "paint": "{name} WINS!",
+  "sub": "{pct} of the wall"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 14001,
+ "day": 3
+}

@@ -1,0 +1,174 @@
+{
+ "id": "f02-cup-r2",
+ "idea": "countries-cup",
+ "variant": 2,
+ "title": "Round 2: 16 Left. Who's Out?",
+ "subtitle": "first 8 out go through",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "prefer": {
+  "timer": null
+ },
+ "hud": "race",
+ "advance": 8,
+ "advanceLabel": "through",
+ "seeds": 200,
+ "series": "COUNTRIES CUP",
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": -7
+   }
+  ],
+  "balls": [
+   {
+    "flag": "BR",
+    "name": "BR",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "AR",
+    "name": "AR",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "FR",
+    "name": "FR",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "DE",
+    "name": "DE",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "ES",
+    "name": "ES",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "IT",
+    "name": "IT",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "GB",
+    "name": "GB",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "US",
+    "name": "US",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "MX",
+    "name": "MX",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "JP",
+    "name": "JP",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "IN",
+    "name": "IN",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "CN",
+    "name": "CN",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "NL",
+    "name": "NL",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "PT",
+    "name": "PT",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "BE",
+    "name": "BE",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   },
+   {
+    "flag": "PL",
+    "name": "PL",
+    "hex": "#FFFFFF",
+    "r": 24,
+    "speed": 780
+   }
+  ],
+  "collide": true,
+  "win": "race",
+  "advance": 8
+ },
+ "choice": {
+  "label": "Pick your country"
+ },
+ "payoff": {
+  "race": "{name} FIRST OUT!",
+  "sub": "Part {next} tomorrow",
+  "next": 3
+ },
+ "fromPrev": {
+  "id": "f01-cup-r1",
+  "take": 16
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 102001,
+ "day": 2
+}

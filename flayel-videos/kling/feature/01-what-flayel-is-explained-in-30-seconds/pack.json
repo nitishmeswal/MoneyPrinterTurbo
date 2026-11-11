@@ -1,0 +1,11 @@
+{
+ "pillar": "feature",
+ "number": 1,
+ "subject": "What Flayel is, explained in 30 seconds",
+ "voice": "en-US-AvaNeural-Female",
+ "script": "Here's Flayel in thirty seconds. You build with AI tools like Claude, ChatGPT, Cursor and Gemini. Every one of them forgets your project the moment a chat ends. Flayel remembers it for them. It keeps a Project Brain: your vision, your architecture, your progress and your decisions. One click turns it into a context block for whichever tool you open. The Flayel bird, a Chrome extension, drops it straight into the chat. And a Ship Score shows whether you're actually moving. Your AI tools forget. Flayel remembers. Try Flayel free at flayel dot com.",
+ "seconds": 34.633,
+ "words": 94,
+ "shots": 8,
+ "has_cta": true
+}

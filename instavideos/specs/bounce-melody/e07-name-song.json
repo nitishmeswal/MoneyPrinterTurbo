@@ -1,0 +1,104 @@
+{
+ "id": "e07-name-song",
+ "idea": "name-the-song",
+ "variant": 7,
+ "title": "Guess The Song?",
+ "subtitle": "every bounce plays the next note",
+ "song": "London Bridge",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 200,
+ "instrument": "marimba",
+ "rules": {
+  "gravity": 950,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 16,
+    "speed": 700
+   }
+  ],
+  "grow": 1.0529026054844044,
+  "melody": [
+   67,
+   69,
+   67,
+   65,
+   64,
+   65,
+   67,
+   62,
+   64,
+   65,
+   64,
+   65,
+   67,
+   67,
+   69,
+   67,
+   65,
+   64,
+   65,
+   67,
+   62,
+   67,
+   64,
+   60,
+   67,
+   69,
+   67,
+   65,
+   64,
+   65,
+   67,
+   62,
+   64,
+   65,
+   64,
+   65,
+   67,
+   67,
+   69,
+   67,
+   65,
+   64,
+   65,
+   67,
+   62,
+   67,
+   64,
+   60
+  ],
+  "melody_len": 48,
+  "win": "fill"
+ },
+ "choice": {
+  "label": "Comment your guess",
+  "options": []
+ },
+ "payoff": {
+  "yes": "{song}",
+  "sub": "Did you get it?"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 87001,
+ "day": 7
+}

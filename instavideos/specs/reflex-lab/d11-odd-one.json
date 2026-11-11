@@ -1,0 +1,34 @@
+{
+ "id": "d11-odd-one",
+ "idea": "odd-one-out",
+ "variant": 3,
+ "format": "odd-one",
+ "title": "Which One Is Different?",
+ "shape": "triangle",
+ "grids": [
+  [
+   5,
+   0.16
+  ],
+  [
+   6,
+   0.1
+  ],
+  [
+   8,
+   0.065
+  ]
+ ],
+ "designSeed": 62,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 71001,
+ "day": 3
+}

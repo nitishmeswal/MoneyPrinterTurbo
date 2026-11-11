@@ -1,0 +1,59 @@
+{
+ "idea": "shrinking-arena",
+ "title": "The Walls Are Closing In!",
+ "subtitle": "the wall closes in every second",
+ "durationSec": "auto",
+ "minSec": 18,
+ "maxSec": 40,
+ "hud": "arena",
+ "seeds": 200,
+ "prefer": {
+  "outcome": "no"
+ },
+ "rules": {
+  "gravity": 1100,
+  "rings": [
+   {
+    "R": 420,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     14
+    ],
+    "rot": -50,
+    "shrink": 12,
+    "Rmin": 30
+   }
+  ],
+  "balls": [
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 22,
+    "speed": 900
+   }
+  ],
+  "win": "shrink_escape",
+  "max_speed": 1700,
+  "crush": 1.25
+ },
+ "payoff": {
+  "yes": "IT ESCAPED!",
+  "no": "CRUSHED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g08-shrinking",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 128001,
+ "day": 2
+}

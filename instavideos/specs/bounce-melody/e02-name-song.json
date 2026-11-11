@@ -1,0 +1,98 @@
+{
+ "id": "e02-name-song",
+ "idea": "name-the-song",
+ "variant": 2,
+ "title": "Name This Song?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Twinkle Twinkle Little Star",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 200,
+ "instrument": "bell",
+ "rules": {
+  "gravity": 950,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 16,
+    "speed": 700
+   }
+  ],
+  "grow": 1.0606852137857197,
+  "melody": [
+   60,
+   60,
+   67,
+   67,
+   69,
+   69,
+   67,
+   65,
+   65,
+   64,
+   64,
+   62,
+   62,
+   60,
+   67,
+   67,
+   65,
+   65,
+   64,
+   64,
+   62,
+   67,
+   67,
+   65,
+   65,
+   64,
+   64,
+   62,
+   60,
+   60,
+   67,
+   67,
+   69,
+   69,
+   67,
+   65,
+   65,
+   64,
+   64,
+   62,
+   62,
+   60
+  ],
+  "melody_len": 42,
+  "win": "fill"
+ },
+ "choice": {
+  "label": "Comment your guess",
+  "options": []
+ },
+ "payoff": {
+  "yes": "{song}",
+  "sub": "Did you get it?"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 82001,
+ "day": 2
+}

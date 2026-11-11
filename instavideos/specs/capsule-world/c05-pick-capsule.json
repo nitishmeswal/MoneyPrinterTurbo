@@ -1,0 +1,19 @@
+{
+ "id": "c05-pick-capsule",
+ "idea": "pause-to-pick",
+ "variant": 5,
+ "format": "pick-capsule",
+ "title": "Pause. Comment What You Got",
+ "designSeed": 168,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 45001,
+ "day": 5
+}

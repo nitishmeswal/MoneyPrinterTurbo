@@ -1,0 +1,66 @@
+{
+ "id": "a11-grow-stuck",
+ "idea": "grow-stuck",
+ "variant": 3,
+ "title": "Will It Fit Through?",
+ "subtitle": "it grows every bounce",
+ "durationSec": 30,
+ "hud": "grow",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1250,
+  "rings": [
+   {
+    "R": 400,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     13.407217200000002
+    ],
+    "rot": -20
+   }
+  ],
+  "balls": [
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 18,
+    "speed": 900
+   }
+  ],
+  "grow": 1.02,
+  "win": "grow_escape"
+ },
+ "choice": {
+  "label": "Escape or stuck?",
+  "options": [
+   {
+    "text": "ESCAPE",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "STUCK",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "IT SQUEEZED OUT!",
+  "no": "TOO BIG!",
+  "no_timer": "STILL INSIDE!",
+  "sub": "Did you call it?"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 11001,
+ "day": 3
+}

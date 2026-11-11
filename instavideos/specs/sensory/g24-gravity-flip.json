@@ -1,0 +1,69 @@
+{
+ "idea": "gravity-flip",
+ "title": "Gravity Flips! Which Colour Escapes?",
+ "subtitle": "gravity turns on every bounce",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 40,
+ "hud": "gravity",
+ "seeds": 200,
+ "prefer": {
+  "timer": null
+ },
+ "rules": {
+  "gravity": 1300,
+  "gravity_flip": true,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     12
+    ],
+    "rot": 25
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 22,
+    "speed": 850
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 22,
+    "speed": 850
+   },
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 22,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "win": "first_escape"
+ },
+ "payoff": {
+  "yes": "{name} WINS!",
+  "no": "STILL TRAPPED!",
+  "sub": "Did your colour win?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g24-gravity-flip",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 144001,
+ "day": 3
+}

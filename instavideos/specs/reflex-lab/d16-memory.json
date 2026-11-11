@@ -1,0 +1,24 @@
+{
+ "id": "d16-memory",
+ "idea": "memory-flash",
+ "variant": 1,
+ "format": "memory-flash",
+ "title": "Can You Remember The Order?",
+ "lengths": [
+  3,
+  5,
+  7
+ ],
+ "designSeed": 90,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 76001,
+ "day": 1
+}

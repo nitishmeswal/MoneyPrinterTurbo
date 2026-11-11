@@ -1,0 +1,27 @@
+{
+ "id": "b18-morph",
+ "idea": "mirror-morph",
+ "variant": 2,
+ "format": "morph",
+ "title": "Is Your Shape A Moon?",
+ "shapes": [
+  "circle",
+  "square",
+  "triangle",
+  "star",
+  "heart",
+  "hexagon"
+ ],
+ "target": "moon",
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 38001,
+ "day": 2
+}

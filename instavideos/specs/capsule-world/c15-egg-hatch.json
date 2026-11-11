@@ -1,0 +1,20 @@
+{
+ "id": "c15-egg-hatch",
+ "idea": "egg-hatch",
+ "variant": 2,
+ "format": "egg-hatch",
+ "title": "Guess The Rarity?",
+ "tier": "Mythic",
+ "designSeed": 301,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 55001,
+ "day": 2
+}

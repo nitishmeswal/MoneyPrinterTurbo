@@ -1,0 +1,11 @@
+{
+ "pillar": "tool",
+ "number": 2,
+ "subject": "Move a half-finished feature from ChatGPT to Claude without losing anything",
+ "voice": "en-US-EmmaNeural-Female",
+ "script": "Halfway through a feature in ChatGPT, and you want Claude to finish it? Don't start over. First, capture the ChatGPT chat into your Project Brain with the bird, so nothing you worked out gets lost. Then open Claude and press Control Shift S. Your project context drops in, formatted for Claude. Claude starts with your project, not a blank page. Switch tools whenever you like. Your project comes with you. Try Flayel free at flayel dot com.",
+ "seconds": 25.667,
+ "words": 77,
+ "shots": 5,
+ "has_cta": true
+}

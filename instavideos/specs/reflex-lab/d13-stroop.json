@@ -1,0 +1,20 @@
+{
+ "id": "d13-stroop",
+ "idea": "colour-word",
+ "variant": 1,
+ "format": "stroop",
+ "title": "Can You Beat This Test?",
+ "count": 21,
+ "designSeed": 80,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 73001,
+ "day": 1
+}

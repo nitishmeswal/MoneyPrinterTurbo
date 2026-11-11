@@ -1,0 +1,57 @@
+{
+ "idea": "gravity-flip",
+ "title": "Gravity Keeps Turning. Escape?",
+ "subtitle": "gravity turns on every bounce",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 40,
+ "hud": "gravity",
+ "seeds": 200,
+ "prefer": {
+  "timer": null
+ },
+ "rules": {
+  "gravity": 1300,
+  "gravity_flip": true,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     13
+    ],
+    "rot": -35
+   }
+  ],
+  "balls": [
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 22,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "win": "escape"
+ },
+ "payoff": {
+  "yes": "IT ESCAPED!",
+  "no": "STILL TRAPPED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g23-gravity-flip",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 143001,
+ "day": 2
+}

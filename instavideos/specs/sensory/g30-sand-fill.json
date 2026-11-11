@@ -1,0 +1,41 @@
+{
+ "idea": "sand-fill",
+ "engine": "sand",
+ "title": "Sand Race: Which Cup Wins?",
+ "subtitle": "first cup to 100% wins",
+ "minSec": 24,
+ "maxSec": 40,
+ "idealSec": 32,
+ "seeds": 60,
+ "palette": [
+  "#F4D35E",
+  "#EE964B",
+  "#F95738",
+  "#0D9488",
+  "#38BDF8",
+  "#F0ABFC"
+ ],
+ "rules": {
+  "cups": 4,
+  "rate": 0.8,
+  "sweep": 46,
+  "full": 0.86,
+  "colours": 6
+ },
+ "payoff": {
+  "cup": "CUP {n} WINS!",
+  "sub": "Did you pick it?"
+ },
+ "music": {
+  "bpm": 92,
+  "root": 50,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "id": "g30-sand-fill",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 150001,
+ "day": 4
+}

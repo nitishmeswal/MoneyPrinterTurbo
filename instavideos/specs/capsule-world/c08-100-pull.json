@@ -1,0 +1,18 @@
+{
+ "id": "c08-100-pull",
+ "idea": "100-pull",
+ "variant": 3,
+ "format": "100-pull",
+ "title": "Mythic Before Pull 100?",
+ "seed0": 27001,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "day": 3
+}

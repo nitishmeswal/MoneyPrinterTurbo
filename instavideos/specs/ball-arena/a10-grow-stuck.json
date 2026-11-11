@@ -1,0 +1,66 @@
+{
+ "id": "a10-grow-stuck",
+ "idea": "grow-stuck",
+ "variant": 2,
+ "title": "3% Bigger Every Bounce. Escape?",
+ "subtitle": "it grows every bounce",
+ "durationSec": 30,
+ "hud": "grow",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1250,
+  "rings": [
+   {
+    "R": 400,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     17.5325148
+    ],
+    "rot": 30
+   }
+  ],
+  "balls": [
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 18,
+    "speed": 900
+   }
+  ],
+  "grow": 1.03,
+  "win": "grow_escape"
+ },
+ "choice": {
+  "label": "Escape or stuck?",
+  "options": [
+   {
+    "text": "ESCAPE",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "STUCK",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "IT SQUEEZED OUT!",
+  "no": "TOO BIG!",
+  "no_timer": "STILL INSIDE!",
+  "sub": "Did you call it?"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 10001,
+ "day": 2
+}

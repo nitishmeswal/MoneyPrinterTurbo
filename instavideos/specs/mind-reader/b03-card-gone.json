@@ -1,0 +1,34 @@
+{
+ "id": "b03-card-gone",
+ "idea": "vanishing-card",
+ "variant": 3,
+ "format": "card-gone",
+ "title": "Pick A Card. It's Gone.",
+ "set1": [
+  "7H",
+  "8S",
+  "9D",
+  "7C",
+  "8H",
+  "9S"
+ ],
+ "set2": [
+  "7S",
+  "8D",
+  "9H",
+  "7D",
+  "8C"
+ ],
+ "back": "#1F5B3A",
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 23001,
+ "day": 3
+}

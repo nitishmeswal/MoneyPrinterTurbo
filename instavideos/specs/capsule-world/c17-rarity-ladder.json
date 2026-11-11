@@ -1,0 +1,19 @@
+{
+ "id": "c17-rarity-ladder",
+ "idea": "rarity-ladder",
+ "variant": 1,
+ "format": "rarity-ladder",
+ "title": "Which One Would You Keep?",
+ "designSeed": 500,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 57001,
+ "day": 1
+}

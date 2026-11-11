@@ -1,0 +1,59 @@
+{
+ "idea": "shrinking-arena",
+ "title": "Can It Get Out In Time?",
+ "subtitle": "the wall closes in every second",
+ "durationSec": "auto",
+ "minSec": 18,
+ "maxSec": 40,
+ "hud": "arena",
+ "seeds": 200,
+ "prefer": {
+  "outcome": "yes"
+ },
+ "rules": {
+  "gravity": 1100,
+  "rings": [
+   {
+    "R": 420,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     18
+    ],
+    "rot": 60,
+    "shrink": 14,
+    "Rmin": 30
+   }
+  ],
+  "balls": [
+   {
+    "name": "Pink",
+    "hex": "#FF6FB5",
+    "r": 22,
+    "speed": 900
+   }
+  ],
+  "win": "shrink_escape",
+  "max_speed": 1700,
+  "crush": 1.25
+ },
+ "payoff": {
+  "yes": "IT ESCAPED!",
+  "no": "CRUSHED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g09-shrinking",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 129001,
+ "day": 3
+}

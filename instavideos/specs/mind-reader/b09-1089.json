@@ -1,0 +1,18 @@
+{
+ "id": "b09-1089",
+ "idea": "1089-prediction",
+ "variant": 1,
+ "format": "1089",
+ "title": "Your Answer Is In Here",
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 29001,
+ "day": 1
+}

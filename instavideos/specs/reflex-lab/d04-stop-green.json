@@ -1,0 +1,36 @@
+{
+ "id": "d04-stop-green",
+ "idea": "stop-on-green",
+ "variant": 4,
+ "format": "stop-green",
+ "title": "How Far Can You Get?",
+ "rounds": [
+  [
+   0.65,
+   26
+  ],
+  [
+   1.0,
+   18
+  ],
+  [
+   1.5,
+   12
+  ],
+  [
+   2.1,
+   7
+  ]
+ ],
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 64001,
+ "day": 4
+}

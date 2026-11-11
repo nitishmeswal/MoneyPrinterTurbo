@@ -1,0 +1,23 @@
+{
+ "id": "d20-pause-ten",
+ "idea": "pause-at-10",
+ "variant": 2,
+ "format": "pause-ten",
+ "title": "Pause At 10.00. Faster Each Time",
+ "rates": [
+  1.5,
+  2.0,
+  3.0
+ ],
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 80001,
+ "day": 2
+}

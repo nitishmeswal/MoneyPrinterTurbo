@@ -1,0 +1,140 @@
+{
+ "id": "e11-song-escape",
+ "idea": "escape-before-song-ends",
+ "variant": 3,
+ "title": "Escape Before The Song Ends?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Amazing Grace",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 260,
+ "instrument": "pluck",
+ "rules": {
+  "gravity": 1180,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720,
+    "gap": [
+     150,
+     9.5
+    ],
+    "rot": 60
+   }
+  ],
+  "balls": [
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 21,
+    "speed": 860
+   }
+  ],
+  "melody": [
+   62,
+   67,
+   71,
+   67,
+   71,
+   69,
+   67,
+   64,
+   62,
+   62,
+   67,
+   71,
+   67,
+   71,
+   69,
+   74,
+   71,
+   74,
+   71,
+   74,
+   71,
+   67,
+   62,
+   64,
+   67,
+   67,
+   64,
+   62,
+   62,
+   67,
+   71,
+   67,
+   71,
+   69,
+   67,
+   62,
+   67,
+   71,
+   67,
+   71,
+   69,
+   67,
+   64,
+   62,
+   62,
+   67,
+   71,
+   67,
+   71,
+   69,
+   74,
+   71,
+   74,
+   71,
+   74,
+   71,
+   67,
+   62,
+   64,
+   67,
+   67,
+   64,
+   62,
+   62,
+   67,
+   71,
+   67,
+   71,
+   69,
+   67
+  ],
+  "melody_len": 70,
+  "win": "song_escape"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ESCAPED!",
+  "no": "SONG OVER!",
+  "sub": "The song: {song}"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 91001,
+ "day": 3
+}

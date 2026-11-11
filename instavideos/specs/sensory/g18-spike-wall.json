@@ -1,0 +1,62 @@
+{
+ "idea": "spike-wall",
+ "title": "Dodge The Spikes. Escape?",
+ "subtitle": "every spike costs a life",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 40,
+ "hud": "lives",
+ "seeds": 200,
+ "prefer": {
+  "outcome": "yes"
+ },
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     12
+    ],
+    "rot": 8,
+    "spikes": [
+     [
+      330,
+      40
+     ]
+    ]
+   }
+  ],
+  "balls": [
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 20,
+    "speed": 900
+   }
+  ],
+  "lives": 3,
+  "win": "spike_escape"
+ },
+ "payoff": {
+  "yes": "IT ESCAPED!",
+  "no": "POPPED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g18-spike-wall",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 138001,
+ "day": 2
+}

@@ -1,0 +1,19 @@
+{
+ "id": "c18-rarity-ladder",
+ "idea": "rarity-ladder",
+ "variant": 2,
+ "format": "rarity-ladder",
+ "title": "Common To Secret. Your Pick?",
+ "designSeed": 503,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 58001,
+ "day": 2
+}

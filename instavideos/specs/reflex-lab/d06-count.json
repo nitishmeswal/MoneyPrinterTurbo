@@ -1,0 +1,25 @@
+{
+ "id": "d06-count",
+ "idea": "count-the-balls",
+ "variant": 2,
+ "format": "count-balls",
+ "title": "How Many Balls? Quick!",
+ "counts": [
+  11,
+  19,
+  33
+ ],
+ "flash": 1.0,
+ "designSeed": 41,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 66001,
+ "day": 2
+}

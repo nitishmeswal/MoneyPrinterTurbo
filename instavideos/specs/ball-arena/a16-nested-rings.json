@@ -1,0 +1,123 @@
+{
+ "id": "a16-nested-rings",
+ "idea": "nested-rings",
+ "variant": 2,
+ "title": "7 Rings. Can It Escape?",
+ "durationSec": 40,
+ "hud": "layers",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1100,
+  "rings": [
+   {
+    "R": 120,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     90,
+     30
+    ],
+    "rot": -30
+   },
+   {
+    "R": 170,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     160,
+     30
+    ],
+    "rot": 39
+   },
+   {
+    "R": 220,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     230,
+     30
+    ],
+    "rot": -48
+   },
+   {
+    "R": 270,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     300,
+     30
+    ],
+    "rot": 57
+   },
+   {
+    "R": 320,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     370,
+     30
+    ],
+    "rot": -66
+   },
+   {
+    "R": 370,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     440,
+     30
+    ],
+    "rot": 75
+   },
+   {
+    "R": 420,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     510,
+     30
+    ],
+    "rot": -84
+   }
+  ],
+  "balls": [
+   {
+    "name": "White",
+    "hex": "#F2F2F2",
+    "r": 15,
+    "speed": 900
+   }
+  ],
+  "win": "all_rings"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ALL {n} RINGS!",
+  "no": "STUCK AT {layers}/{n}",
+  "sub": "Did you call it?"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 16001,
+ "day": 2
+}

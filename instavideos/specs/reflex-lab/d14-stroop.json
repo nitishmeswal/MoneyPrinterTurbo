@@ -1,0 +1,20 @@
+{
+ "id": "d14-stroop",
+ "idea": "colour-word",
+ "variant": 2,
+ "format": "stroop",
+ "title": "Say The Colour, Not The Word",
+ "count": 23,
+ "designSeed": 81,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 74001,
+ "day": 2
+}

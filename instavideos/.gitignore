@@ -1,0 +1,5 @@
+# rebuilt by batch.py / npm install
+out/
+motion/node_modules/
+motion/public/data/
+motion/public/audio/

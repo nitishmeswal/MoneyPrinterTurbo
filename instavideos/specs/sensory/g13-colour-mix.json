@@ -1,0 +1,70 @@
+{
+ "idea": "colour-mix",
+ "title": "Yellow + Blue. Which Wins?",
+ "subtitle": "where colours cross, they mix",
+ "durationSec": 28,
+ "hud": "mix",
+ "seeds": 160,
+ "mixes": {
+  "1": [
+   "Yellow",
+   "#FFD23F"
+  ],
+  "2": [
+   "Blue",
+   "#2F6FE0"
+  ],
+  "3": [
+   "Green",
+   "#3DBE5A"
+  ]
+ },
+ "rules": {
+  "gravity": 900,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 26,
+    "speed": 850
+   },
+   {
+    "name": "Blue",
+    "hex": "#2F6FE0",
+    "r": 26,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "grid": {
+   "cell": 6,
+   "mode": "mix",
+   "brush": 1.0
+  },
+  "win": "mix"
+ },
+ "payoff": {
+  "mix": "{mixname} WINS!",
+  "sub": "{pct} of the canvas"
+ },
+ "music": {
+  "bpm": 92,
+  "root": 50,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "instrument": "pluck",
+ "id": "g13-colour-mix",
+ "engine": "sim",
+ "account": "sensory",
+ "seed0": 133001,
+ "day": 2
+}

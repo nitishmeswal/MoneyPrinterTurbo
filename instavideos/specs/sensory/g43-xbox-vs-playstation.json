@@ -1,0 +1,89 @@
+{
+ "idea": "xbox-vs-playstation",
+ "title": "Xbox vs PlayStation. Who Wins?",
+ "subtitle": "3 generations each, one arena",
+ "durationSec": "auto",
+ "minSec": 34,
+ "maxSec": 58,
+ "hud": "hp",
+ "seeds": 300,
+ "prefer": {
+  "outcome": "battle",
+  "reason": null
+ },
+ "rules": {
+  "gravity": 300,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "collide": true,
+  "hp": 100,
+  "dmg_k": 0.005,
+  "win": "battle",
+  "balls": [
+   {
+    "name": "PS2",
+    "img": "ps2",
+    "hex": "#3D7BFF",
+    "r": 36,
+    "speed": 800
+   },
+   {
+    "name": "Xbox",
+    "img": "xbox",
+    "hex": "#2CB742",
+    "r": 36,
+    "speed": 800
+   },
+   {
+    "name": "PS3",
+    "img": "ps3",
+    "hex": "#8FB0FF",
+    "r": 36,
+    "speed": 800
+   },
+   {
+    "name": "Xbox 360",
+    "img": "x360",
+    "hex": "#9BE15D",
+    "r": 36,
+    "speed": 800
+   },
+   {
+    "name": "PS4",
+    "img": "ps4",
+    "hex": "#1E50D8",
+    "r": 36,
+    "speed": 800
+   },
+   {
+    "name": "Xbox One",
+    "img": "xone",
+    "hex": "#138A36",
+    "r": 36,
+    "speed": 800
+   }
+  ]
+ },
+ "payoff": {
+  "battle": "{name} WINS!",
+  "sub": "{hp} HP left"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g43-xbox-vs-playstation",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 163001,
+ "day": 1
+}

@@ -1,0 +1,115 @@
+{
+ "id": "f09-league-r4",
+ "idea": "colour-league",
+ "variant": 4,
+ "title": "Race 4: Halfway. Who Leads?",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 42,
+ "prefer": {
+  "timer": null
+ },
+ "hud": "race",
+ "advance": 5,
+ "advanceLabel": "scored",
+ "seeds": 220,
+ "series": "STANDINGS · RACE 4/8",
+ "league": {
+  "race": 4,
+  "prev": "f08-league-r3",
+  "points": [
+   10,
+   7,
+   5,
+   3,
+   1
+  ]
+ },
+ "rules": {
+  "gravity": 500,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     225,
+     16
+    ],
+    "rot": -30
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Orange",
+    "hex": "#FF9F43",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Pink",
+    "hex": "#FF6FB5",
+    "r": 25,
+    "speed": 800
+   },
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 25,
+    "speed": 800
+   }
+  ],
+  "collide": true,
+  "win": "race",
+  "advance": 5
+ },
+ "choice": {
+  "label": "Who's your team?"
+ },
+ "payoff": {
+  "race": "{name} WINS RACE {race}!",
+  "sub": ""
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 109001,
+ "day": 4
+}

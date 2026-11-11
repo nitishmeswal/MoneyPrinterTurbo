@@ -1,0 +1,19 @@
+{
+ "id": "b06-your-number",
+ "idea": "number-force",
+ "variant": 2,
+ "format": "number-force",
+ "title": "Think Of A Number",
+ "add": 14,
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 26001,
+ "day": 2
+}

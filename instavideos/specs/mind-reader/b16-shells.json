@@ -1,0 +1,19 @@
+{
+ "id": "b16-shells",
+ "idea": "shell-tracker",
+ "variant": 3,
+ "format": "shells",
+ "title": "Eyes On The Ball. Where?",
+ "designSeed": 23,
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 36001,
+ "day": 3
+}

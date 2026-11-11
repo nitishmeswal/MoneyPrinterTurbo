@@ -1,0 +1,64 @@
+{
+ "idea": "break-out",
+ "title": "Will It Break Out?",
+ "subtitle": "3 walls, 180 bricks",
+ "durationSec": 36,
+ "hud": "bricks",
+ "seeds": 160,
+ "prefer": {
+  "outcome": "no"
+ },
+ "rules": {
+  "gravity": 1300,
+  "rings": [
+   {
+    "R": 250,
+    "w": 24,
+    "n": 52,
+    "kind": "bricks"
+   },
+   {
+    "R": 330,
+    "w": 24,
+    "n": 60,
+    "kind": "bricks"
+   },
+   {
+    "R": 410,
+    "w": 24,
+    "n": 68,
+    "kind": "bricks"
+   }
+  ],
+  "balls": [
+   {
+    "name": "Pink",
+    "hex": "#FF6FB5",
+    "r": 20,
+    "speed": 950
+   }
+  ],
+  "on_bounce": [
+   "remove_brick"
+  ],
+  "win": "escape"
+ },
+ "payoff": {
+  "yes": "IT BROKE OUT!",
+  "no": "TRAPPED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "id": "g03-break-out",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 123001,
+ "day": 7
+}

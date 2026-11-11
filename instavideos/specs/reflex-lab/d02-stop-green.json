@@ -1,0 +1,36 @@
+{
+ "id": "d02-stop-green",
+ "idea": "stop-on-green",
+ "variant": 2,
+ "format": "stop-green",
+ "title": "Pause On Green. What Round?",
+ "rounds": [
+  [
+   0.7,
+   28
+  ],
+  [
+   1.0,
+   20
+  ],
+  [
+   1.4,
+   13
+  ],
+  [
+   2.0,
+   8
+  ]
+ ],
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 62001,
+ "day": 2
+}

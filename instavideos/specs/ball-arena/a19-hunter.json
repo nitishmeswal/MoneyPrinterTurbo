@@ -1,0 +1,93 @@
+{
+ "id": "a19-hunter",
+ "idea": "hunter-prey",
+ "variant": 2,
+ "title": "6 Balls vs 1 Hunter. Who Lasts?",
+ "subtitle": "the hunt starts in 4 seconds",
+ "durationSec": 35,
+ "hud": "survivors",
+ "seeds": 300,
+ "rules": {
+  "gravity": 200,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Hunter",
+    "hex": "#FF3B3B",
+    "r": 18,
+    "speed": 340,
+    "hunter": true
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 14,
+    "speed": 520
+   },
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 14,
+    "speed": 520
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 14,
+    "speed": 520
+   },
+   {
+    "name": "Pink",
+    "hex": "#FF6FB5",
+    "r": 14,
+    "speed": 520
+   },
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 14,
+    "speed": 520
+   },
+   {
+    "name": "Orange",
+    "hex": "#FF9F43",
+    "r": 14,
+    "speed": 520
+   }
+  ],
+  "collide": true,
+  "hunter_grow": 1.25,
+  "hunt_start": 4.0,
+  "win": "survivor"
+ },
+ "choice": {
+  "label": "Pick a survivor"
+ },
+ "prefer": {
+  "outcome": "survivor",
+  "reason": null
+ },
+ "payoff": {
+  "survivor": "{name} SURVIVES!",
+  "survivor_timer": "{left} SURVIVED!",
+  "sub": "Did you pick the survivor?"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 19001,
+ "day": 2
+}

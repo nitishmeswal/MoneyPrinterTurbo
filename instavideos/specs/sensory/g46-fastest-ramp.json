@@ -1,0 +1,36 @@
+{
+ "idea": "fastest-ramp",
+ "engine": "ramp",
+ "title": "Which Ramp Is The Fastest?",
+ "subtitle": "a 30 m drop, real speed, no friction",
+ "rules": {
+  "A": [
+   130,
+   600
+  ],
+  "B": [
+   880,
+   1210
+  ],
+  "mPerPx": 0.05,
+  "replaySlow": 4,
+  "replayLead": 0.8,
+  "startSec": 3.0
+ },
+ "payoff": {
+  "win": "{name} WINS!",
+  "sub": "the brachistochrone curve"
+ },
+ "music": {
+  "bpm": 100,
+  "root": 48,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.28
+ },
+ "id": "g46-fastest-ramp",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 166001,
+ "day": 1
+}

@@ -1,0 +1,11 @@
+{
+ "pillar": "tool",
+ "number": 3,
+ "subject": "Keep Cursor from writing code that breaks your architecture",
+ "voice": "en-IN-PrabhatNeural-Male",
+ "script": "Cursor is fast. Without your architecture, it's fast in the wrong direction. It invents a data layer you didn't ask for. Does auth its own way. Pulls in a library you ruled out. Give Cursor the blueprint before it writes a line: your stack, how data and auth work, and your rules for AI calls. In Flayel, that's your Architecture bucket. Copy the context block formatted for Cursor, and paste it in. Now every line Cursor writes fits the blueprint. Try Flayel free at flayel dot com.",
+ "seconds": 38.393,
+ "words": 87,
+ "shots": 6,
+ "has_cta": true
+}

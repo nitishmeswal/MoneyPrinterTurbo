@@ -1,0 +1,70 @@
+{
+ "idea": "colour-mix",
+ "title": "Red + Yellow. Which Wins?",
+ "subtitle": "where colours cross, they mix",
+ "durationSec": 28,
+ "hud": "mix",
+ "seeds": 160,
+ "mixes": {
+  "1": [
+   "Red",
+   "#E8383D"
+  ],
+  "2": [
+   "Yellow",
+   "#FFD23F"
+  ],
+  "3": [
+   "Orange",
+   "#FF8A2A"
+  ]
+ },
+ "rules": {
+  "gravity": 900,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#E8383D",
+    "r": 26,
+    "speed": 850
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 26,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "grid": {
+   "cell": 6,
+   "mode": "mix",
+   "brush": 1.0
+  },
+  "win": "mix"
+ },
+ "payoff": {
+  "mix": "{mixname} WINS!",
+  "sub": "{pct} of the canvas"
+ },
+ "music": {
+  "bpm": 92,
+  "root": 50,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "instrument": "pluck",
+ "id": "g15-colour-mix",
+ "engine": "sim",
+ "account": "sensory",
+ "seed0": 135001,
+ "day": 4
+}

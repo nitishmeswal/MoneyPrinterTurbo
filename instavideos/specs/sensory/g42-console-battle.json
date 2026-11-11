@@ -1,0 +1,75 @@
+{
+ "idea": "console-battle",
+ "title": "Console Battle: Who Survives?",
+ "subtitle": "PS5 vs Xbox vs Switch vs Steam Deck",
+ "durationSec": "auto",
+ "minSec": 32,
+ "maxSec": 55,
+ "hud": "hp",
+ "seeds": 300,
+ "prefer": {
+  "outcome": "battle",
+  "reason": null
+ },
+ "rules": {
+  "gravity": 300,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "collide": true,
+  "hp": 100,
+  "dmg_k": 0.0055,
+  "win": "battle",
+  "balls": [
+   {
+    "name": "PS5",
+    "img": "ps5",
+    "hex": "#2E6DF6",
+    "r": 40,
+    "speed": 800
+   },
+   {
+    "name": "Xbox",
+    "img": "xsx",
+    "hex": "#2CB742",
+    "r": 40,
+    "speed": 800
+   },
+   {
+    "name": "Switch",
+    "img": "switch",
+    "hex": "#E60012",
+    "r": 40,
+    "speed": 800
+   },
+   {
+    "name": "Deck",
+    "img": "deck",
+    "hex": "#9AA3B5",
+    "r": 40,
+    "speed": 800
+   }
+  ]
+ },
+ "payoff": {
+  "battle": "{name} WINS!",
+  "sub": "{hp} HP left"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g42-console-battle",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 162001,
+ "day": 1
+}

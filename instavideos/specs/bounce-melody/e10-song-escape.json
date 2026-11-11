@@ -1,0 +1,146 @@
+{
+ "id": "e10-song-escape",
+ "idea": "escape-before-song-ends",
+ "variant": 2,
+ "title": "Escape Before The Song Ends?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Greensleeves",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 260,
+ "instrument": "marimba",
+ "rules": {
+  "gravity": 1140,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720,
+    "gap": [
+     30,
+     9.5
+    ],
+    "rot": -50
+   }
+  ],
+  "balls": [
+   {
+    "name": "Orange",
+    "hex": "#FF9F43",
+    "r": 21,
+    "speed": 840
+   }
+  ],
+  "melody": [
+   57,
+   60,
+   62,
+   64,
+   65,
+   64,
+   62,
+   59,
+   55,
+   57,
+   59,
+   60,
+   57,
+   57,
+   56,
+   57,
+   59,
+   56,
+   52,
+   57,
+   60,
+   62,
+   64,
+   65,
+   64,
+   62,
+   59,
+   55,
+   57,
+   59,
+   60,
+   59,
+   57,
+   56,
+   54,
+   56,
+   57,
+   57,
+   57,
+   60,
+   62,
+   64,
+   65,
+   64,
+   62,
+   59,
+   55,
+   57,
+   59,
+   60,
+   57,
+   57,
+   56,
+   57,
+   59,
+   56,
+   52,
+   57,
+   60,
+   62,
+   64,
+   65,
+   64,
+   62,
+   59,
+   55,
+   57,
+   59,
+   60,
+   59,
+   57,
+   56,
+   54,
+   56,
+   57,
+   57
+  ],
+  "melody_len": 76,
+  "win": "song_escape"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ESCAPED!",
+  "no": "SONG OVER!",
+  "sub": "The song: {song}"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 90001,
+ "day": 2
+}

@@ -1,0 +1,75 @@
+{
+ "id": "f05-cup-r5",
+ "idea": "countries-cup",
+ "variant": 5,
+ "title": "The Final: Who Wins?",
+ "subtitle": "first one out is champion",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "prefer": {
+  "outcome": "yes"
+ },
+ "hud": "race",
+ "advance": 1,
+ "advanceLabel": "through",
+ "seeds": 200,
+ "series": "COUNTRIES CUP",
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": 7
+   }
+  ],
+  "balls": [
+   {
+    "flag": "BR",
+    "name": "BR",
+    "hex": "#FFFFFF",
+    "r": 32,
+    "speed": 780
+   },
+   {
+    "flag": "AR",
+    "name": "AR",
+    "hex": "#FFFFFF",
+    "r": 32,
+    "speed": 780
+   }
+  ],
+  "collide": true,
+  "win": "first_escape",
+  "advance": 1
+ },
+ "choice": {
+  "label": "Pick your country"
+ },
+ "payoff": {
+  "yes": "{name} WINS THE CUP!",
+  "sub": "Champion of the Countries Cup"
+ },
+ "fromPrev": {
+  "id": "f04-cup-r4",
+  "take": 2
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 105001,
+ "day": 5
+}

@@ -1,0 +1,106 @@
+{
+ "id": "f18-colours-sf",
+ "idea": "bracket-colours",
+ "variant": 2,
+ "title": "Semifinals: Who Advances?",
+ "subtitle": "Colour Duel",
+ "durationSec": 32,
+ "minSec": 22,
+ "maxSec": 40,
+ "hud": "duels",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1100,
+  "arenas": [
+   {
+    "cx": 255,
+    "cy": 950
+   },
+   {
+    "cx": 680,
+    "cy": 950
+   }
+  ],
+  "rings": [
+   {
+    "arena": 0,
+    "R": 190,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     90,
+     26
+    ],
+    "rot": -50
+   },
+   {
+    "arena": 1,
+    "R": 190,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     135,
+     26
+    ],
+    "rot": 50
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 22,
+    "speed": 650,
+    "arena": 0
+   },
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 22,
+    "speed": 650,
+    "arena": 0
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 22,
+    "speed": 650,
+    "arena": 1
+   },
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 22,
+    "speed": 650,
+    "arena": 1
+   }
+  ],
+  "collide": true,
+  "win": "duels"
+ },
+ "choice": {
+  "label": "Pick a winner"
+ },
+ "payoff": {
+  "duels": "TO THE {stage}!",
+  "sub": ""
+ },
+ "stage": "FINAL",
+ "fromPrev": {
+  "id": "f17-colours-qf",
+  "take": 4,
+  "winners": true
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 118001,
+ "day": 2
+}

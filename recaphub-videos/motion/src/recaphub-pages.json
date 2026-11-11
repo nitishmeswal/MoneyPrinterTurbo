@@ -1,0 +1,175 @@
+{
+ "id": "recaphub-pages",
+ "music": "launch/music-rh-pages.wav",
+ "bpm": 120,
+ "musicOffset": 0,
+ "tail": 1.3,
+ "lead": true,
+ "pulse": 0.012,
+ "fadeIn": 1,
+ "flashBeats": [],
+ "scenes": [
+  {
+   "id": "hook",
+   "beat": 0,
+   "beats": 6,
+   "exit": "cut"
+  },
+  {
+   "id": "problem",
+   "beat": 6,
+   "beats": 6,
+   "exit": "zoom"
+  },
+  {
+   "id": "publish",
+   "beat": 12,
+   "beats": 8,
+   "exit": "cut",
+   "cue": "flash"
+  },
+  {
+   "id": "theme",
+   "beat": 20,
+   "beats": 8,
+   "exit": "push",
+   "cue": "leak"
+  },
+  {
+   "id": "live",
+   "beat": 28,
+   "beats": 8,
+   "exit": "zoom",
+   "cue": "leak"
+  },
+  {
+   "id": "treemap",
+   "beat": 36,
+   "beats": 8,
+   "exit": "cut"
+  },
+  {
+   "id": "mindmap",
+   "beat": 44,
+   "beats": 6,
+   "exit": "whip",
+   "cue": "leak"
+  },
+  {
+   "id": "session",
+   "beat": 50,
+   "beats": 6,
+   "exit": "zoom"
+  },
+  {
+   "id": "mobile",
+   "beat": 56,
+   "beats": 6,
+   "exit": "cut"
+  },
+  {
+   "id": "embed",
+   "beat": 62,
+   "beats": 4,
+   "exit": "zoom",
+   "cue": "flash"
+  },
+  {
+   "id": "end",
+   "beat": 66,
+   "beats": 8,
+   "exit": "end",
+   "cue": "leak"
+  }
+ ],
+ "accents": [
+  [
+   0.0,
+   0.85
+  ],
+  [
+   0.0,
+   0.95
+  ],
+  [
+   1.5,
+   0.85
+  ],
+  [
+   6.0,
+   0.42
+  ],
+  [
+   6.0,
+   0.95
+  ],
+  [
+   8.0,
+   0.42
+  ],
+  [
+   10.0,
+   0.42
+  ],
+  [
+   12.0,
+   0.42
+  ],
+  [
+   14.0,
+   0.42
+  ],
+  [
+   16.0,
+   0.42
+  ],
+  [
+   18.0,
+   0.42
+  ],
+  [
+   20.0,
+   0.42
+  ],
+  [
+   22.0,
+   0.42
+  ],
+  [
+   24.0,
+   0.42
+  ],
+  [
+   26.0,
+   0.42
+  ],
+  [
+   28.0,
+   0.42
+  ],
+  [
+   30.0,
+   0.42
+  ],
+  [
+   31.0,
+   0.95
+  ],
+  [
+   32.0,
+   0.42
+  ],
+  [
+   34.0,
+   0.42
+  ],
+  [
+   35.0,
+   0.85
+  ],
+  [
+   35.0,
+   1.0
+  ]
+ ]
+}

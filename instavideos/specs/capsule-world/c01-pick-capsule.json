@@ -1,0 +1,19 @@
+{
+ "id": "c01-pick-capsule",
+ "idea": "pause-to-pick",
+ "variant": 1,
+ "format": "pick-capsule",
+ "title": "Pause To Pick Your Capsule",
+ "designSeed": 100,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 41001,
+ "day": 1
+}

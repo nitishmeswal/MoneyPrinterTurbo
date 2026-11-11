@@ -1,0 +1,19 @@
+{
+ "id": "c02-pick-capsule",
+ "idea": "pause-to-pick",
+ "variant": 2,
+ "format": "pick-capsule",
+ "title": "Pause Now. What Did You Get?",
+ "designSeed": 117,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 42001,
+ "day": 2
+}

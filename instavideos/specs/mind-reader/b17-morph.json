@@ -1,0 +1,27 @@
+{
+ "id": "b17-morph",
+ "idea": "mirror-morph",
+ "variant": 1,
+ "format": "morph",
+ "title": "Pick A Shape. Watch It Change",
+ "shapes": [
+  "circle",
+  "square",
+  "triangle",
+  "star",
+  "heart",
+  "hexagon"
+ ],
+ "target": "diamond",
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 37001,
+ "day": 1
+}

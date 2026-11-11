@@ -1,0 +1,108 @@
+{
+ "id": "recaphub-teaser",
+ "music": "launch/music-rh-teaser.wav",
+ "bpm": 124,
+ "musicOffset": 0,
+ "tail": 1.4,
+ "lead": true,
+ "pulse": 0.012,
+ "fadeIn": 1,
+ "flashBeats": [],
+ "scenes": [
+  {
+   "id": "hook",
+   "beat": 0,
+   "beats": 4,
+   "exit": "cut"
+  },
+  {
+   "id": "reveal",
+   "beat": 4,
+   "beats": 8,
+   "exit": "cut",
+   "cue": "flash"
+  },
+  {
+   "id": "clips",
+   "beat": 12,
+   "beats": 6,
+   "exit": "whip",
+   "cue": "flash"
+  },
+  {
+   "id": "page",
+   "beat": 18,
+   "beats": 6,
+   "exit": "whip",
+   "cue": "leak"
+  },
+  {
+   "id": "ask",
+   "beat": 24,
+   "beats": 6,
+   "exit": "cut",
+   "cue": "leak"
+  },
+  {
+   "id": "end",
+   "beat": 30,
+   "beats": 8,
+   "exit": "end",
+   "cue": "flash"
+  }
+ ],
+ "accents": [
+  [
+   1.935,
+   0.8
+  ],
+  [
+   1.935,
+   1.0
+  ],
+  [
+   2.298,
+   0.8
+  ],
+  [
+   2.661,
+   0.8
+  ],
+  [
+   5.806,
+   0.42
+  ],
+  [
+   5.806,
+   0.9
+  ],
+  [
+   7.742,
+   0.42
+  ],
+  [
+   9.677,
+   0.42
+  ],
+  [
+   11.613,
+   0.42
+  ],
+  [
+   13.548,
+   0.42
+  ],
+  [
+   14.516,
+   0.85
+  ],
+  [
+   14.516,
+   1.0
+  ],
+  [
+   17.419,
+   0.7
+  ]
+ ]
+}

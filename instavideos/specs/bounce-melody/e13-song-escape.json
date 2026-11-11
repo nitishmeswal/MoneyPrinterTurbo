@@ -1,0 +1,151 @@
+{
+ "id": "e13-song-escape",
+ "idea": "escape-before-song-ends",
+ "variant": 5,
+ "title": "Escape Before The Song Ends?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Row, Row, Row Your Boat",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 260,
+ "instrument": "marimba",
+ "rules": {
+  "gravity": 1260,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720,
+    "gap": [
+     270,
+     9.5
+    ],
+    "rot": 55
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 21,
+    "speed": 900
+   }
+  ],
+  "melody": [
+   60,
+   60,
+   60,
+   62,
+   64,
+   64,
+   62,
+   64,
+   65,
+   67,
+   72,
+   72,
+   72,
+   67,
+   67,
+   67,
+   64,
+   64,
+   64,
+   60,
+   60,
+   60,
+   67,
+   65,
+   64,
+   62,
+   60,
+   60,
+   60,
+   60,
+   62,
+   64,
+   64,
+   62,
+   64,
+   65,
+   67,
+   72,
+   72,
+   72,
+   67,
+   67,
+   67,
+   64,
+   64,
+   64,
+   60,
+   60,
+   60,
+   67,
+   65,
+   64,
+   62,
+   60,
+   60,
+   60,
+   60,
+   62,
+   64,
+   64,
+   62,
+   64,
+   65,
+   67,
+   72,
+   72,
+   72,
+   67,
+   67,
+   67,
+   64,
+   64,
+   64,
+   60,
+   60,
+   60,
+   67,
+   65,
+   64,
+   62,
+   60
+  ],
+  "melody_len": 81,
+  "win": "song_escape"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ESCAPED!",
+  "no": "SONG OVER!",
+  "sub": "The song: {song}"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 93001,
+ "day": 5
+}

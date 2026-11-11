@@ -1,0 +1,282 @@
+{
+ "id": "f01-cup-r1",
+ "idea": "countries-cup",
+ "variant": 1,
+ "title": "32 Countries. Only 16 Survive",
+ "subtitle": "first 16 out go through",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "prefer": {
+  "timer": null
+ },
+ "hud": "race",
+ "advance": 16,
+ "advanceLabel": "through",
+ "seeds": 200,
+ "series": "COUNTRIES CUP",
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": 7
+   }
+  ],
+  "balls": [
+   {
+    "flag": "BR",
+    "name": "BR",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "AR",
+    "name": "AR",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "FR",
+    "name": "FR",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "DE",
+    "name": "DE",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "ES",
+    "name": "ES",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "IT",
+    "name": "IT",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "GB",
+    "name": "GB",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "US",
+    "name": "US",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "MX",
+    "name": "MX",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "JP",
+    "name": "JP",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "IN",
+    "name": "IN",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "CN",
+    "name": "CN",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "NL",
+    "name": "NL",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "PT",
+    "name": "PT",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "BE",
+    "name": "BE",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "PL",
+    "name": "PL",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "UA",
+    "name": "UA",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "TR",
+    "name": "TR",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "SE",
+    "name": "SE",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "NO",
+    "name": "NO",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "DK",
+    "name": "DK",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "CH",
+    "name": "CH",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "CA",
+    "name": "CA",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "NG",
+    "name": "NG",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "GH",
+    "name": "GH",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "SN",
+    "name": "SN",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "CM",
+    "name": "CM",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "MA",
+    "name": "MA",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "EG",
+    "name": "EG",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "CO",
+    "name": "CO",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "CL",
+    "name": "CL",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   },
+   {
+    "flag": "PE",
+    "name": "PE",
+    "hex": "#FFFFFF",
+    "r": 20,
+    "speed": 780
+   }
+  ],
+  "collide": true,
+  "win": "race",
+  "advance": 16
+ },
+ "choice": {
+  "label": "Pick your country"
+ },
+ "payoff": {
+  "race": "{name} FIRST OUT!",
+  "sub": "Part {next} tomorrow",
+  "next": 2
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 101001,
+ "day": 1
+}

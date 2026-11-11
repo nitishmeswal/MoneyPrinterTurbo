@@ -1,0 +1,56 @@
+{
+ "id": "f20-champions",
+ "idea": "champion-of-champions",
+ "variant": 1,
+ "title": "Cup Champ vs League Champ?",
+ "subtitle": "the two champions meet",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 40,
+ "hud": "timer",
+ "seeds": 200,
+ "prefer": {
+  "outcome": "yes"
+ },
+ "champions": {
+  "cup": "f05-cup-r5",
+  "league": "f13-league-r8"
+ },
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 400,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": -7
+   }
+  ],
+  "balls": [],
+  "collide": true,
+  "win": "first_escape"
+ },
+ "choice": {
+  "label": "Pick a champion"
+ },
+ "payoff": {
+  "yes": "{name} RULES THE KINGDOM!",
+  "sub": "Champion of champions"
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 120001,
+ "day": 1
+}

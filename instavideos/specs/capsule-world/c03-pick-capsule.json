@@ -1,0 +1,19 @@
+{
+ "id": "c03-pick-capsule",
+ "idea": "pause-to-pick",
+ "variant": 3,
+ "format": "pick-capsule",
+ "title": "Which Capsule Is Yours?",
+ "designSeed": 134,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 43001,
+ "day": 3
+}

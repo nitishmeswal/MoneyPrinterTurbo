@@ -1,0 +1,148 @@
+{
+ "id": "e09-song-escape",
+ "idea": "escape-before-song-ends",
+ "variant": 1,
+ "title": "Escape Before The Song Ends?",
+ "subtitle": "every bounce plays the next note",
+ "song": "In the Hall of the Mountain King",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 260,
+ "instrument": "bell",
+ "rules": {
+  "gravity": 1100,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720,
+    "gap": [
+     90,
+     9.5
+    ],
+    "rot": 40
+   }
+  ],
+  "balls": [
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 21,
+    "speed": 820
+   }
+  ],
+  "melody": [
+   59,
+   61,
+   62,
+   64,
+   66,
+   62,
+   66,
+   65,
+   61,
+   65,
+   64,
+   60,
+   64,
+   59,
+   61,
+   62,
+   64,
+   66,
+   62,
+   66,
+   71,
+   69,
+   66,
+   62,
+   66,
+   69,
+   59,
+   61,
+   62,
+   64,
+   66,
+   62,
+   66,
+   65,
+   61,
+   65,
+   64,
+   60,
+   64,
+   59,
+   61,
+   62,
+   64,
+   66,
+   62,
+   66,
+   71,
+   69,
+   66,
+   62,
+   66,
+   69,
+   59,
+   61,
+   62,
+   64,
+   66,
+   62,
+   66,
+   65,
+   61,
+   65,
+   64,
+   60,
+   64,
+   59,
+   61,
+   62,
+   64,
+   66,
+   62,
+   66,
+   71,
+   69,
+   66,
+   62,
+   66,
+   69
+  ],
+  "melody_len": 78,
+  "win": "song_escape"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ESCAPED!",
+  "no": "SONG OVER!",
+  "sub": "The song: {song}"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 89001,
+ "day": 1
+}

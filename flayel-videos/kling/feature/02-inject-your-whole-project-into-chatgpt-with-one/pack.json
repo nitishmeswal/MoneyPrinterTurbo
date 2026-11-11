@@ -1,0 +1,11 @@
+{
+ "pillar": "feature",
+ "number": 2,
+ "subject": "Inject your whole project into ChatGPT with one keyboard shortcut",
+ "voice": "en-US-AndrewNeural-Male",
+ "script": "Three keys. Your whole project. Here's how. Install the Flayel bird, a Chrome extension. Open your project in Flayel once, and the bird connects on its own. No tokens to paste. Now open ChatGPT and press Control Shift S. Your vision, stack, progress and next step land in the prompt box, formatted for ChatGPT. Same three keys on Claude, Gemini and Cursor. Try Flayel free at flayel dot com.",
+ "seconds": 26.167,
+ "words": 69,
+ "shots": 6,
+ "has_cta": true
+}

@@ -1,0 +1,7 @@
+# Rendered videos and contact sheets are rebuilt by make_video.py / contact_sheet.py
+out/
+kling-ledger.json
+# Cloned source repos and the prebuilt EffectCraft CLI (re-download; see README "Launch films")
+remotion/
+effectcraft/
+effectcraft-bin/

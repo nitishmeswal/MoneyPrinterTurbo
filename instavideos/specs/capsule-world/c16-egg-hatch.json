@@ -1,0 +1,20 @@
+{
+ "id": "c16-egg-hatch",
+ "idea": "egg-hatch",
+ "variant": 3,
+ "format": "egg-hatch",
+ "title": "Rare Egg. What's Inside?",
+ "tier": "Secret",
+ "designSeed": 302,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 56001,
+ "day": 3
+}

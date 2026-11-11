@@ -1,0 +1,105 @@
+{
+ "id": "e04-name-song",
+ "idea": "name-the-song",
+ "variant": 4,
+ "title": "Know This Tune?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Jingle Bells",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 200,
+ "instrument": "marimba",
+ "rules": {
+  "gravity": 950,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 16,
+    "speed": 700
+   }
+  ],
+  "grow": 1.0517954756263144,
+  "melody": [
+   64,
+   64,
+   64,
+   64,
+   64,
+   64,
+   64,
+   67,
+   60,
+   62,
+   64,
+   65,
+   65,
+   65,
+   65,
+   65,
+   64,
+   64,
+   64,
+   64,
+   62,
+   62,
+   64,
+   62,
+   67,
+   64,
+   64,
+   64,
+   64,
+   64,
+   64,
+   64,
+   67,
+   60,
+   62,
+   64,
+   65,
+   65,
+   65,
+   65,
+   65,
+   64,
+   64,
+   64,
+   67,
+   67,
+   65,
+   62,
+   60
+  ],
+  "melody_len": 49,
+  "win": "fill"
+ },
+ "choice": {
+  "label": "Comment your guess",
+  "options": []
+ },
+ "payoff": {
+  "yes": "{song}",
+  "sub": "Did you get it?"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 84001,
+ "day": 4
+}

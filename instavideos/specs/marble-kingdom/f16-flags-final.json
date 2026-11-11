@@ -1,0 +1,73 @@
+{
+ "id": "f16-flags-final",
+ "idea": "bracket-flags",
+ "variant": 3,
+ "title": "The Final: Who Wins?",
+ "subtitle": "World Duel",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 40,
+ "hud": "timer",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 400,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": 7
+   }
+  ],
+  "balls": [
+   {
+    "flag": "JP",
+    "name": "JP",
+    "hex": "#FFFFFF",
+    "r": 30,
+    "speed": 800
+   },
+   {
+    "flag": "VN",
+    "name": "VN",
+    "hex": "#FFFFFF",
+    "r": 30,
+    "speed": 800
+   }
+  ],
+  "collide": true,
+  "win": "first_escape"
+ },
+ "choice": {
+  "label": "Pick a winner"
+ },
+ "payoff": {
+  "yes": "{name} IS CHAMPION!",
+  "sub": "World Duel winner"
+ },
+ "stage": "",
+ "prefer": {
+  "outcome": "yes"
+ },
+ "fromPrev": {
+  "id": "f15-flags-sf",
+  "take": 2,
+  "winners": true
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 116001,
+ "day": 3
+}

@@ -1,0 +1,19 @@
+{
+ "id": "b07-your-number",
+ "idea": "number-force",
+ "variant": 3,
+ "format": "number-force",
+ "title": "Your Number Is…?",
+ "add": 8,
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 27001,
+ "day": 3
+}

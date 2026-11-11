@@ -1,0 +1,25 @@
+{
+ "id": "d07-count",
+ "idea": "count-the-balls",
+ "variant": 3,
+ "format": "count-balls",
+ "title": "Can You Count This Fast?",
+ "counts": [
+  8,
+  16,
+  25
+ ],
+ "flash": 0.8,
+ "designSeed": 42,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 67001,
+ "day": 3
+}

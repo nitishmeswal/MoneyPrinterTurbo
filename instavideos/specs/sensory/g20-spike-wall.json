@@ -1,0 +1,64 @@
+{
+ "idea": "spike-wall",
+ "title": "5 Lives vs The Spike Wall",
+ "subtitle": "every spike costs a life",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 40,
+ "hud": "lives",
+ "seeds": 200,
+ "prefer": {},
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     70,
+     10
+    ],
+    "rot": 8,
+    "spikes": [
+     [
+      200,
+      40
+     ],
+     [
+      300,
+      40
+     ]
+    ]
+   }
+  ],
+  "balls": [
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 20,
+    "speed": 900
+   }
+  ],
+  "lives": 5,
+  "win": "spike_escape"
+ },
+ "payoff": {
+  "yes": "IT ESCAPED!",
+  "no": "POPPED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g20-spike-wall",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 140001,
+ "day": 4
+}

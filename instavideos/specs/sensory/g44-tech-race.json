@@ -1,0 +1,92 @@
+{
+ "idea": "tech-race",
+ "title": "Which Tech Giant Escapes First?",
+ "subtitle": "one gap, six companies",
+ "durationSec": "auto",
+ "minSec": 28,
+ "maxSec": 48,
+ "hud": "timer",
+ "seeds": 300,
+ "prefer": {
+  "outcome": "yes"
+ },
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     13
+    ],
+    "rot": 7
+   }
+  ],
+  "collide": true,
+  "win": "first_escape",
+  "balls": [
+   {
+    "name": "Apple",
+    "img": "apple",
+    "hex": "#A2AAAD",
+    "r": 34,
+    "speed": 780
+   },
+   {
+    "name": "Google",
+    "img": "google",
+    "hex": "#4285F4",
+    "r": 34,
+    "speed": 780
+   },
+   {
+    "name": "Microsoft",
+    "img": "microsoft",
+    "hex": "#F25022",
+    "r": 34,
+    "speed": 780
+   },
+   {
+    "name": "Nvidia",
+    "img": "nvidia",
+    "hex": "#76B900",
+    "r": 34,
+    "speed": 780
+   },
+   {
+    "name": "Meta",
+    "img": "meta",
+    "hex": "#0081FB",
+    "r": 34,
+    "speed": 780
+   },
+   {
+    "name": "Amazon",
+    "img": "amazon",
+    "hex": "#FF9900",
+    "r": 34,
+    "speed": 780
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "{name} WINS!",
+  "sub": "Did your pick win?",
+  "no": "NOBODY ESCAPED!"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g44-tech-race",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 164001,
+ "day": 1
+}

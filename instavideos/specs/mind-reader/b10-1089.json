@@ -1,0 +1,18 @@
+{
+ "id": "b10-1089",
+ "idea": "1089-prediction",
+ "variant": 2,
+ "format": "1089",
+ "title": "I Predicted Your Answer",
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 30001,
+ "day": 2
+}

@@ -1,0 +1,26 @@
+{
+ "id": "c20-box-layers",
+ "idea": "mystery-layers",
+ "variant": 2,
+ "format": "box-layers",
+ "title": "4 Boxes Deep. What's Inside?",
+ "tier": "Mythic",
+ "layers": [
+  "wood",
+  "candy",
+  "ice",
+  "star"
+ ],
+ "designSeed": 701,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 60001,
+ "day": 2
+}

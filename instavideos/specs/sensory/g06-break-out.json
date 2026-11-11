@@ -1,0 +1,74 @@
+{
+ "idea": "break-out",
+ "title": "Will It Break Out?",
+ "subtitle": "5 walls, 240 bricks",
+ "durationSec": 42,
+ "hud": "bricks",
+ "seeds": 160,
+ "prefer": {},
+ "rules": {
+  "gravity": 1300,
+  "rings": [
+   {
+    "R": 180,
+    "w": 24,
+    "n": 32,
+    "kind": "bricks"
+   },
+   {
+    "R": 240,
+    "w": 24,
+    "n": 40,
+    "kind": "bricks"
+   },
+   {
+    "R": 300,
+    "w": 24,
+    "n": 48,
+    "kind": "bricks"
+   },
+   {
+    "R": 360,
+    "w": 24,
+    "n": 56,
+    "kind": "bricks"
+   },
+   {
+    "R": 420,
+    "w": 24,
+    "n": 64,
+    "kind": "bricks"
+   }
+  ],
+  "balls": [
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 19,
+    "speed": 950
+   }
+  ],
+  "on_bounce": [
+   "remove_brick"
+  ],
+  "win": "escape"
+ },
+ "payoff": {
+  "yes": "IT BROKE OUT!",
+  "no": "TRAPPED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "id": "g06-break-out",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 126001,
+ "day": 10
+}

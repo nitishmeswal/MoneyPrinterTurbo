@@ -1,0 +1,57 @@
+{
+ "idea": "shrinking-arena",
+ "title": "Escape Before It's Crushed?",
+ "subtitle": "the wall closes in every second",
+ "durationSec": "auto",
+ "minSec": 18,
+ "maxSec": 40,
+ "hud": "arena",
+ "seeds": 200,
+ "prefer": {},
+ "rules": {
+  "gravity": 1100,
+  "rings": [
+   {
+    "R": 420,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     16
+    ],
+    "rot": 40,
+    "shrink": 13,
+    "Rmin": 30
+   }
+  ],
+  "balls": [
+   {
+    "name": "Gold",
+    "hex": "#F2C14E",
+    "r": 22,
+    "speed": 900
+   }
+  ],
+  "win": "shrink_escape",
+  "max_speed": 1700,
+  "crush": 1.25
+ },
+ "payoff": {
+  "yes": "IT ESCAPED!",
+  "no": "CRUSHED!",
+  "sub": "Did you call it?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g07-shrinking",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 127001,
+ "day": 1
+}

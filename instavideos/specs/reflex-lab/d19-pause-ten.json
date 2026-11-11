@@ -1,0 +1,22 @@
+{
+ "id": "d19-pause-ten",
+ "idea": "pause-at-10",
+ "variant": 1,
+ "format": "pause-ten",
+ "title": "Can You Pause At 10.00?",
+ "rates": [
+  1.0,
+  1.5
+ ],
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 79001,
+ "day": 1
+}

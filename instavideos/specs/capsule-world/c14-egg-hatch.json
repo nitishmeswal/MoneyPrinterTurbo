@@ -1,0 +1,20 @@
+{
+ "id": "c14-egg-hatch",
+ "idea": "egg-hatch",
+ "variant": 1,
+ "format": "egg-hatch",
+ "title": "What Will Hatch?",
+ "tier": "Epic",
+ "designSeed": 300,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 54001,
+ "day": 1
+}

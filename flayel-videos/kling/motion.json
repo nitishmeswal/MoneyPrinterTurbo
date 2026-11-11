@@ -1,0 +1,1560 @@
+{
+ "_note": "Motion-graphic scene per shot (same order as the pack's shots). Items appear when their `at` word is spoken (\"word#2\" = 2nd time). \"flash\": true plays the shiny-bird sting as that shot starts; \"in\" picks the transition (whip, zoom, iris, push, slam, rise). The last shot is always the end card.",
+ "pain/1": [
+  {
+   "scene": "counter",
+   "phrase": "So, I'm building an app that...",
+   "to": 100,
+   "at": "hundredth"
+  },
+  {
+   "scene": "typing",
+   "title": "ChatGPT · New chat",
+   "text": "So, I'm building an app that helps freelancers send invoices. It's built with Next.js, FastAPI and Postgres. Yesterday we decided against Firebase. Auth works, invoices work. Next I need the billing page, and please remember the rule about AI calls, and also...",
+   "tags": [
+    {
+     "text": "What it is",
+     "at": "what",
+     "color": "blue"
+    },
+    {
+     "text": "The stack",
+     "at": "stack",
+     "color": "purple"
+    },
+    {
+     "text": "What you decided",
+     "at": "decided",
+     "color": "amber"
+    },
+    {
+     "text": "What's next",
+     "at": "next",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "scene": "brain",
+   "title": "Written once.",
+   "flash": true
+  },
+  {
+   "scene": "bird",
+   "tool": "ChatGPT",
+   "at": "control"
+  },
+  {
+   "scene": "end",
+   "line1": "Say it once.",
+   "line2": "Never again."
+  }
+ ],
+ "tool/1": [
+  {
+   "scene": "kinetic",
+   "text": "Researching with *Gemini*? / Stop getting answers / for the ~average app~.",
+   "speed": true
+  },
+  {
+   "scene": "chat",
+   "title": "Gemini · New chat",
+   "messages": [
+    {
+     "from": "you",
+     "text": "Research invoicing features for my app.",
+     "at": "gemini"
+    },
+    {
+     "from": "ai",
+     "text": "Here are the top features for every kind of business...",
+     "at": "researches"
+    }
+   ]
+  },
+  {
+   "scene": "bird",
+   "tool": "Gemini",
+   "at": "injects",
+   "flash": true
+  },
+  {
+   "scene": "tabs",
+   "saveAt": "save",
+   "jotAt": "jot",
+   "thought": "Freelancers hate chasing, not billing.",
+   "page": "How freelancers chase late invoices"
+  },
+  {
+   "scene": "end",
+   "line1": "Not forty tabs.",
+   "line2": "Your project.",
+   "captions": true
+  }
+ ],
+ "edu/1": [
+  {
+   "scene": "clock",
+   "mode": "countdown",
+   "from": 300,
+   "title": "Tomorrow starts here.",
+   "titleAt": "best",
+   "label": "THE LAST FIVE MINUTES OF TODAY"
+  },
+  {
+   "scene": "path",
+   "kicker": "Before you close the laptop",
+   "title": "Write three things",
+   "items": [
+    {
+     "text": "What works right now",
+     "at": "works"
+    },
+    {
+     "text": "What's broken or half done",
+     "at": "broken"
+    },
+    {
+     "text": "The very next step",
+     "sub": "Small enough to start cold",
+     "at": "very"
+    }
+   ]
+  },
+  {
+   "scene": "sunrise",
+   "at": "begin",
+   "note": "Next: fix the login redirect",
+   "title": "Just begin."
+  },
+  {
+   "scene": "bucket",
+   "name": "Progress",
+   "role": "The Pulse",
+   "color": "green",
+   "flash": true,
+   "members": [
+    {
+     "label": "Works today",
+     "value": "Auth, invoices",
+     "at": "progress"
+    },
+    {
+     "label": "In progress",
+     "value": "Billing page",
+     "at": "bucket"
+    },
+    {
+     "label": "Next",
+     "value": "Fix the login redirect",
+     "at": "logged"
+    },
+    {
+     "label": "Broken or mocked",
+     "value": "Emails are mocked",
+     "at": "session"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "Close the laptop.",
+   "line2": "Start easy tomorrow."
+  }
+ ],
+ "bucket/1": [
+  {
+   "scene": "quotes",
+   "phase": "empty",
+   "at": "never",
+   "kicker": "Your users",
+   "title": "Never met them."
+  },
+  {
+   "scene": "quotes",
+   "phase": "guess",
+   "items": [
+    {
+     "text": "Probably wants dark mode?",
+     "at": "guesses"
+    },
+    {
+     "text": "Maybe more AI?",
+     "at": "want"
+    },
+    {
+     "text": "Everyone loves dashboards",
+     "at": "honestly"
+    }
+   ]
+  },
+  {
+   "scene": "quotes",
+   "phase": "real",
+   "flash": true,
+   "items": [
+    {
+     "who": "MK",
+     "tag": "QUOTE",
+     "text": "I just want to get paid faster.",
+     "at": "quotes",
+     "color": "blue"
+    },
+    {
+     "who": "JR",
+     "tag": "COMPLAINT",
+     "text": "Reminders feel pushy.",
+     "at": "complaints",
+     "color": "red"
+    },
+    {
+     "who": "AS",
+     "tag": "REQUEST",
+     "text": "Can I export to CSV?",
+     "at": "requests",
+     "color": "purple"
+    },
+    {
+     "who": "LT",
+     "tag": "LOVED",
+     "text": "Setup took two minutes.",
+     "at": "loved",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "scene": "chat",
+   "title": "Claude · New chat",
+   "messages": [
+    {
+     "from": "you",
+     "text": "What should I build next?",
+     "at": "ask"
+    },
+    {
+     "from": "ai",
+     "text": "A user asked for CSV export, and reminders feel pushy. Start there.",
+     "at": "hears"
+    }
+   ]
+  },
+  {
+   "scene": "stat",
+   "count": 14,
+   "suffix": " days",
+   "label": "until feedback goes stale",
+   "kicker": "Keep it fresh",
+   "at": "stale"
+  },
+  {
+   "scene": "end",
+   "line1": "Hear your users.",
+   "line2": "Not your guesses."
+  }
+ ],
+ "myth/1": [
+  {
+   "scene": "aging",
+   "phase": "fresh",
+   "title": "Just keep a doc?",
+   "titleAt": "can"
+  },
+  {
+   "scene": "aging",
+   "phase": "stale",
+   "ageAt": "billing",
+   "at": "shipped"
+  },
+  {
+   "scene": "kinetic",
+   "text": "*Find* it. / *Copy* it. / *Paste* it. / Every. New. Chat.",
+   "slam": true
+  },
+  {
+   "scene": "brain",
+   "title": "That doc, alive.",
+   "flash": true
+  },
+  {
+   "scene": "end",
+   "line1": "A doc sits still.",
+   "line2": "Flayel keeps up."
+  }
+ ],
+ "pov/1": [
+  {
+   "scene": "grid",
+   "phase": "empty",
+   "zeroAt": "not",
+   "zeroLabel": "lines of code"
+  },
+  {
+   "scene": "grid",
+   "phase": "decided",
+   "items": [
+    {
+     "text": "The name",
+     "at": "name",
+     "cell": 3
+    },
+    {
+     "text": "The pricing model",
+     "at": "pricing",
+     "cell": 9
+    },
+    {
+     "text": "What you're not building",
+     "at": "not#2",
+     "cell": 17
+    }
+   ]
+  },
+  {
+   "scene": "paper",
+   "at": "paper",
+   "title": "A paper ship."
+  },
+  {
+   "scene": "paper",
+   "phase": "fleet",
+   "title": "Leave a trail.",
+   "flash": true,
+   "items": [
+    {
+     "text": "Name: Beam",
+     "at": "log"
+    },
+    {
+     "text": "Pricing: monthly",
+     "at": "bird"
+    },
+    {
+     "text": "Not building: teams",
+     "at": "page"
+    }
+   ]
+  },
+  {
+   "scene": "kinetic",
+   "text": "Every call you made, / *already waiting*."
+  },
+  {
+   "scene": "end",
+   "line1": "Thinking weeks count.",
+   "line2": "Log the paper ships."
+  }
+ ],
+ "momentum/1": [
+  {
+   "scene": "graph",
+   "phase": "busy",
+   "kicker": "Busy vs shipping",
+   "flatAt": "still",
+   "flat": "Still flat.",
+   "items": [
+    {
+     "text": "20 tabs open",
+     "at": "twenty"
+    },
+    {
+     "text": "3 plans",
+     "at": "plans"
+    },
+    {
+     "text": "A new idea daily",
+     "at": "idea"
+    }
+   ]
+  },
+  {
+   "scene": "score",
+   "value": 82,
+   "flash": true
+  },
+  {
+   "scene": "graph",
+   "phase": "score",
+   "dropAt": "drops",
+   "climbAt": "climbs"
+  },
+  {
+   "scene": "lever",
+   "at": "lever",
+   "card": "Log a session today"
+  },
+  {
+   "scene": "end",
+   "line1": "One number.",
+   "line2": "No guessing."
+  }
+ ],
+ "pain/2": [
+  {
+   "scene": "kinetic",
+   "text": "Your best idea / is *somewhere*.",
+   "slam": true
+  },
+  {
+   "scene": "scatter",
+   "loseAt": "scattered",
+   "loseText": "Lost.",
+   "items": [
+    {
+     "src": "Notes app",
+     "text": "Reminders, not dashboards?",
+     "at": "note",
+     "color": "gold",
+     "paper": "#fff2c2"
+    },
+    {
+     "src": "DM to self",
+     "text": "pricing idea!! monthly?",
+     "at": "dm",
+     "color": "purple"
+    },
+    {
+     "src": "Old ChatGPT chat",
+     "text": "…the webhook approach was…",
+     "at": "halfway",
+     "color": "green"
+    },
+    {
+     "src": "Tab 37",
+     "text": "How freelancers get paid",
+     "at": "tab",
+     "color": "blue"
+    }
+   ]
+  },
+  {
+   "scene": "scatter",
+   "gather": true,
+   "gatherAt": 0.2,
+   "homeText": "One home.",
+   "items": [
+    {
+     "src": "Notes app",
+     "text": "Reminders, not dashboards?",
+     "color": "gold",
+     "paper": "#fff2c2"
+    },
+    {
+     "src": "DM to self",
+     "text": "pricing idea!! monthly?",
+     "color": "purple"
+    },
+    {
+     "src": "Old ChatGPT chat",
+     "text": "…the webhook approach was…",
+     "color": "green"
+    },
+    {
+     "src": "Tab 37",
+     "text": "How freelancers get paid",
+     "color": "blue"
+    }
+   ]
+  },
+  {
+   "scene": "birdAction",
+   "mode": "thought",
+   "at": "jots",
+   "flash": true
+  },
+  {
+   "scene": "birdAction",
+   "mode": "capture",
+   "at": "capture"
+  },
+  {
+   "scene": "end",
+   "line1": "Every idea,",
+   "line2": "one home.",
+   "captions": true
+  }
+ ],
+ "feature/2": [
+  {
+   "scene": "keys",
+   "title": "Your whole project.",
+   "at": "whole"
+  },
+  {
+   "scene": "install",
+   "at": "chrome",
+   "flash": true
+  },
+  {
+   "scene": "install",
+   "phase": "connect",
+   "at": "connects",
+   "noAt": "tokens"
+  },
+  {
+   "scene": "bird",
+   "tool": "ChatGPT",
+   "at": "control"
+  },
+  {
+   "scene": "roll",
+   "prefix": "Same three keys on",
+   "items": [
+    {
+     "text": "Claude",
+     "at": "claude",
+     "color": "amber"
+    },
+    {
+     "text": "Gemini",
+     "at": "gemini",
+     "color": "blue"
+    },
+    {
+     "text": "Cursor",
+     "at": "cursor",
+     "color": "text"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "Three keys.",
+   "line2": "Your whole project."
+  }
+ ],
+ "tool/2": [
+  {
+   "scene": "kinetic",
+   "text": "Halfway in *ChatGPT*. / Finish in _Claude_? / ~Start over~.",
+   "tilt": -2
+  },
+  {
+   "scene": "handoff",
+   "phase": "capture",
+   "at": "bird",
+   "flash": true
+  },
+  {
+   "scene": "handoff",
+   "phase": "inject",
+   "at": "control"
+  },
+  {
+   "scene": "kinetic",
+   "text": "*Your project*, / not a ~blank page~."
+  },
+  {
+   "scene": "end",
+   "line1": "Switch tools anytime.",
+   "line2": "Your project comes too.",
+   "captions": true
+  }
+ ],
+ "edu/2": [
+  {
+   "scene": "kinetic",
+   "text": "Your AI builds on / *fake code*.",
+   "glitch": true,
+   "slam": true
+  },
+  {
+   "scene": "tower",
+   "phase": "fall",
+   "fallAt": "falls",
+   "title": "Crash.",
+   "titleAt": "falls",
+   "blocks": [
+    {
+     "text": "Receipts",
+     "at": "receipts"
+    },
+    {
+     "text": "Refunds",
+     "at": "refunds"
+    },
+    {
+     "text": "Emails",
+     "at": "emails"
+    }
+   ]
+  },
+  {
+   "scene": "tower",
+   "phase": "labeled",
+   "labels": [
+    {
+     "text": "Payments are fake",
+     "at": "payments"
+    },
+    {
+     "text": "Emails don't send yet",
+     "at": "emails"
+    }
+   ]
+  },
+  {
+   "scene": "tower",
+   "phase": "fixed",
+   "fixAt": "fixes",
+   "blocks": [
+    {
+     "text": "Receipts"
+    },
+    {
+     "text": "Refunds"
+    }
+   ]
+  },
+  {
+   "scene": "bucket",
+   "name": "Progress",
+   "role": "The Pulse",
+   "color": "green",
+   "flash": true,
+   "members": [
+    {
+     "label": "Works today",
+     "value": "Auth, invoices",
+     "filled": true
+    },
+    {
+     "label": "In progress",
+     "value": "Billing page",
+     "filled": true
+    },
+    {
+     "label": "Broken or mocked",
+     "value": "Payments are fake. Emails don't send yet.",
+     "at": "broken"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "Say what's fake.",
+   "line2": "Build on what's real."
+  }
+ ],
+ "bucket/2": [
+  {
+   "scene": "kinetic",
+   "text": "This has to / *make money*.",
+   "slam": true
+  },
+  {
+   "scene": "receipt",
+   "phase": "bad",
+   "header": "FEATURE IDEA · RECEIPT",
+   "total": "-$$$",
+   "totalAt": "pay",
+   "verdict": "LOSES MONEY",
+   "lines": [
+    {
+     "text": "AI on every keystroke",
+     "value": "-$$$",
+     "at": "suggests",
+     "color": "red"
+    },
+    {
+     "text": "Server costs",
+     "value": "up",
+     "at": "cost"
+    },
+    {
+     "text": "Revenue",
+     "value": "$0",
+     "at": "earn"
+    },
+    {
+     "text": "Paying users",
+     "value": "0",
+     "at": "never",
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "scene": "bucket",
+   "name": "Monetization",
+   "role": "Memory bucket",
+   "color": "gold",
+   "flash": true,
+   "members": [
+    {
+     "label": "Pricing",
+     "value": "Free, then a monthly plan",
+     "at": "pricing"
+    },
+    {
+     "label": "Revenue",
+     "value": "First paying customers",
+     "at": "revenue"
+    },
+    {
+     "label": "Costs",
+     "value": "AI calls per invoice",
+     "at": "costs"
+    },
+    {
+     "label": "Channel",
+     "value": "Freelancer communities",
+     "at": "channel"
+    }
+   ]
+  },
+  {
+   "scene": "receipt",
+   "phase": "good",
+   "header": "FEATURE IDEA · RECEIPT",
+   "total": "WORTH IT",
+   "totalAt": "money",
+   "verdict": "WORTH BUILDING",
+   "lines": [
+    {
+     "text": "Payment reminders",
+     "value": "idea",
+     "at": "weighs"
+    },
+    {
+     "text": "Cost to run",
+     "value": "tiny",
+     "at": "idea"
+    },
+    {
+     "text": "Who pays",
+     "value": "paying users",
+     "at": "actually",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "It has to make money.",
+   "line2": "Now your AI knows.",
+   "captions": true
+  }
+ ],
+ "myth/2": [
+  {
+   "scene": "kinetic",
+   "text": "A bigger *context window* / means your AI / remembers?",
+   "stamp": "MYTH",
+   "stampAt": "project"
+  },
+  {
+   "scene": "window",
+   "phase": "grow",
+   "at": "bigger"
+  },
+  {
+   "scene": "window",
+   "phase": "reset",
+   "at": "new"
+  },
+  {
+   "scene": "kinetic",
+   "text": "~Size~ isn't memory. / Memory is what *survives* / between chats."
+  },
+  {
+   "scene": "window",
+   "phase": "refill",
+   "at": "vision",
+   "flash": true
+  },
+  {
+   "scene": "end",
+   "line1": "Big windows are great.",
+   "line2": "Flayel fills them.",
+   "captions": true
+  }
+ ],
+ "pov/2": [
+  {
+   "scene": "calendar",
+   "days": 14,
+   "at": "nothing",
+   "title": "Remember nothing."
+  },
+  {
+   "scene": "terminal",
+   "blocks": [
+    {
+     "cmd": "git branch",
+     "at": "branch",
+     "out": [
+      "  feature/billing",
+      "  fix/login-maybe",
+      "  wip-final",
+      "* main"
+     ]
+    },
+    {
+     "cmd": "git status",
+     "at": "broken",
+     "out": [
+      "modified: billing.tsx",
+      "modified: ???"
+     ]
+    },
+    {
+     "cmd": "ls",
+     "at": "why",
+     "out": [
+      "billing.tsx  final.tsx",
+      "final_final.tsx  final_final_2.tsx"
+     ],
+     "hl": "final_final_2"
+    }
+   ]
+  },
+  {
+   "scene": "clock",
+   "mode": "spin",
+   "label": "1 hour later",
+   "sub": "Still lost.",
+   "at": "still"
+  },
+  {
+   "scene": "recap",
+   "kicker": "Flayel",
+   "title": "Welcome back",
+   "at": "recap",
+   "flash": true,
+   "lines": [
+    "You were on: the billing page",
+    "Last session: invoices shipped",
+    "Next: payment reminders"
+   ]
+  },
+  {
+   "scene": "bucket",
+   "name": "Progress",
+   "role": "The Pulse",
+   "color": "green",
+   "members": [
+    {
+     "label": "Works today",
+     "value": "Auth, invoices",
+     "at": "works"
+    },
+    {
+     "label": "In progress",
+     "value": "Billing page",
+     "filled": true
+    },
+    {
+     "label": "Next",
+     "value": "Payment reminders",
+     "at": "next"
+    }
+   ]
+  },
+  {
+   "scene": "bird",
+   "tool": "Claude",
+   "at": "control"
+  },
+  {
+   "scene": "end",
+   "line1": "Back in five minutes.",
+   "line2": "Flayel remembers."
+  }
+ ],
+ "momentum/2": [
+  {
+   "scene": "slot",
+   "value": 73,
+   "at": "want",
+   "label": "AI'S OPINION",
+   "verdict": "TOTALLY OBJECTIVE"
+  },
+  {
+   "scene": "slot",
+   "value": 100,
+   "initial": "073",
+   "ask": "Pretty please?",
+   "askAt": "say",
+   "at": "hundred",
+   "jackpot": "Wow. A hundred.",
+   "verdict": "FLATTERY WORKS"
+  },
+  {
+   "scene": "kinetic",
+   "text": "Ship Score: / not an AI's / ~opinion~."
+  },
+  {
+   "scene": "equation",
+   "flash": true,
+   "result": 82,
+   "terms": [
+    {
+     "text": "Memory you filled",
+     "at": "memory",
+     "color": "blue"
+    },
+    {
+     "text": "Sessions you logged",
+     "at": "sessions",
+     "color": "green"
+    },
+    {
+     "text": "How recent they are",
+     "at": "recent",
+     "color": "accent"
+    },
+    {
+     "text": "Todos you finished",
+     "at": "todos",
+     "color": "gold"
+    },
+    {
+     "text": "Milestones you hit",
+     "at": "milestones",
+     "color": "purple"
+    },
+    {
+     "text": "Real traction",
+     "at": "traction",
+     "color": "amber"
+    }
+   ]
+  },
+  {
+   "scene": "equation",
+   "phase": "repeat",
+   "at": "same",
+   "result": 82
+  },
+  {
+   "scene": "end",
+   "line1": "When it moves,",
+   "line2": "it means something."
+  }
+ ],
+ "pain/3": [
+  {
+   "scene": "kinetic",
+   "text": "Your AI chat isn't / getting ~smarter~. / It's getting *longer*."
+  },
+  {
+   "scene": "decay",
+   "rule": "Never call AI models from the browser.",
+   "count": 200,
+   "tags": [
+    {
+     "text": "Drifts",
+     "at": "drifts"
+    },
+    {
+     "text": "Repeats old mistakes",
+     "at": "repeats"
+    },
+    {
+     "text": "Forgot your rule",
+     "at": "forgets"
+    }
+   ]
+  },
+  {
+   "scene": "kinetic",
+   "text": "~One endless chat~. / *Short, fresh chats*.",
+   "in": "slam"
+  },
+  {
+   "scene": "cycle",
+   "flash": true,
+   "nodes": [
+    {
+     "text": "New chat",
+     "at": "start",
+     "color": "blue"
+    },
+    {
+     "text": "Inject · Ctrl Shift S",
+     "at": "inject",
+     "color": "accent"
+    },
+    {
+     "text": "Useful work",
+     "at": "useful",
+     "color": "green"
+    },
+    {
+     "text": "Capture it back",
+     "at": "capture",
+     "color": "gold"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "Fresh chat.",
+   "line2": "Full memory."
+  }
+ ],
+ "feature/3": [
+  {
+   "scene": "sidebar",
+   "title": "Buried.",
+   "at": "never",
+   "sub": "YOUR BEST CHAT IS IN HERE"
+  },
+  {
+   "scene": "birdAction",
+   "mode": "capture",
+   "at": "click",
+   "flash": true
+  },
+  {
+   "scene": "redact",
+   "at": "redacted",
+   "keepAt": "learned",
+   "privAt": "private"
+  },
+  {
+   "scene": "kinetic",
+   "text": "The bird acts / only when / you *click*.",
+   "in": "iris"
+  },
+  {
+   "scene": "end",
+   "line1": "Keep the good parts.",
+   "line2": "Flayel remembers.",
+   "captions": true
+  }
+ ],
+ "tool/3": [
+  {
+   "scene": "kinetic",
+   "text": "Cursor is *fast*. / In the _wrong direction_.",
+   "speed": true,
+   "glitch": true
+  },
+  {
+   "scene": "blueprint",
+   "phase": "clash",
+   "blocks": [
+    {
+     "text": "new DataLayer()",
+     "at": "data",
+     "slot": 0
+    },
+    {
+     "text": "auth: custom JWT",
+     "at": "auth",
+     "slot": 1
+    },
+    {
+     "text": "import ruled-out-lib",
+     "at": "library",
+     "slot": 2
+    }
+   ]
+  },
+  {
+   "scene": "blueprint",
+   "phase": "draw",
+   "slots": [
+    {
+     "label": "STACK",
+     "value": "Next.js · FastAPI · Postgres",
+     "at": "stack"
+    },
+    {
+     "label": "DATA & AUTH",
+     "value": "Postgres with row-level security",
+     "at": "data"
+    },
+    {
+     "label": "AI RULES",
+     "value": "Models only called from the server",
+     "at": "rules"
+    }
+   ]
+  },
+  {
+   "scene": "context",
+   "tool": "Cursor",
+   "at": "copy",
+   "flash": true
+  },
+  {
+   "scene": "blueprint",
+   "phase": "fit",
+   "blocks": [
+    {
+     "text": "Postgres queries",
+     "at": "every",
+     "slot": 0
+    },
+    {
+     "text": "Row-level security",
+     "at": "cursor",
+     "slot": 1
+    },
+    {
+     "text": "Server-side AI calls",
+     "at": "fits",
+     "slot": 2
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "Code that fits.",
+   "line2": "Flayel remembers."
+  }
+ ],
+ "edu/3": [
+  {
+   "scene": "strike",
+   "items": [
+    {
+     "text": "“We empower creators to unlock their full potential.”",
+     "at": "most",
+     "strikeAt": "useless",
+     "size": 80
+    }
+   ],
+   "stamp": "USELESS TO AN AI",
+   "stampAt": "ai"
+  },
+  {
+   "scene": "madlib",
+   "phase": "blanks",
+   "title": "Three blanks",
+   "kicker": "A one-line vision",
+   "slots": [
+    {
+     "pre": "A",
+     "label": "WHAT",
+     "value": "budgeting app",
+     "at": "what"
+    },
+    {
+     "pre": "for",
+     "label": "WHO",
+     "value": "freelancers",
+     "at": "who"
+    },
+    {
+     "pre": "that",
+     "label": "DOES WHAT",
+     "value": "predicts slow months",
+     "at": "does"
+    }
+   ]
+  },
+  {
+   "scene": "madlib",
+   "phase": "fill",
+   "slots": [
+    {
+     "pre": "A",
+     "label": "WHAT",
+     "value": "budgeting app",
+     "at": "budgeting"
+    },
+    {
+     "pre": "for",
+     "label": "WHO",
+     "value": "freelancers",
+     "at": "freelancers"
+    },
+    {
+     "pre": "that",
+     "label": "DOES WHAT",
+     "value": "predicts slow months",
+     "at": "predicts"
+    }
+   ]
+  },
+  {
+   "scene": "strike",
+   "stamp": "NOT THIS",
+   "stampAt": "adjectives",
+   "items": [
+    {
+     "text": "A mission statement",
+     "at": "mission",
+     "serif": false,
+     "size": 90
+    },
+    {
+     "text": "Ten adjectives",
+     "at": "ten",
+     "serif": false,
+     "size": 90
+    }
+   ]
+  },
+  {
+   "scene": "madlib",
+   "phase": "test",
+   "yesAt": "works",
+   "slots": [
+    {
+     "pre": "A",
+     "label": "WHAT",
+     "value": "budgeting app"
+    },
+    {
+     "pre": "for",
+     "label": "WHO",
+     "value": "freelancers",
+     "alt": "agencies",
+     "altAt": "changed"
+    },
+    {
+     "pre": "that",
+     "label": "DOES WHAT",
+     "value": "predicts slow months"
+    }
+   ]
+  },
+  {
+   "scene": "bucket",
+   "name": "Vision",
+   "role": "The North Star",
+   "color": "blue",
+   "flash": true,
+   "members": [
+    {
+     "label": "One-liner",
+     "value": "A budgeting app for freelancers that predicts slow months",
+     "at": "bucket"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "One line.",
+   "line2": "Every tool reads it."
+  }
+ ],
+ "bucket/3": [
+  {
+   "scene": "kinetic",
+   "text": "Not all memory / _ages the same_."
+  },
+  {
+   "scene": "timers",
+   "label": "Stays fresh for",
+   "highlight": "Vision",
+   "items": [
+    {
+     "name": "Progress",
+     "days": 7,
+     "color": "green",
+     "at": "progress"
+    },
+    {
+     "name": "User Feedback",
+     "days": 14,
+     "color": "red",
+     "at": "feedback"
+    },
+    {
+     "name": "Architecture",
+     "days": 30,
+     "color": "purple",
+     "at": "architecture"
+    },
+    {
+     "name": "Decisions",
+     "days": 30,
+     "color": "amber",
+     "at": "decisions"
+    },
+    {
+     "name": "Monetization",
+     "days": 30,
+     "color": "gold",
+     "at": "monetization"
+    },
+    {
+     "name": "Vision",
+     "days": 90,
+     "color": "blue",
+     "at": "vision"
+    }
+   ]
+  },
+  {
+   "scene": "kinetic",
+   "text": "Flayel tracks / how *fresh* / each bucket is.",
+   "flash": true
+  },
+  {
+   "scene": "versus",
+   "rightBrand": false,
+   "left": {
+    "title": "Progress",
+    "points": [
+     "Update often",
+     "Stale in a week"
+    ],
+    "at": "progress"
+   },
+   "right": {
+    "title": "Vision",
+    "points": [
+     "Write it once",
+     "Lasts a quarter"
+    ],
+    "at": "vision"
+   }
+  },
+  {
+   "scene": "end",
+   "line1": "A stable direction.",
+   "line2": "A fresh picture.",
+   "captions": true
+  }
+ ],
+ "myth/3": [
+  {
+   "scene": "orbit",
+   "phase": "walled",
+   "wallAt": "only",
+   "caption": "Great, inside Claude.",
+   "items": [
+    {
+     "text": "Files",
+     "at": "files"
+    },
+    {
+     "text": "Instructions",
+     "at": "instructions"
+    },
+    {
+     "text": "Every chat uses them",
+     "at": "every"
+    }
+   ]
+  },
+  {
+   "scene": "orbit",
+   "phase": "week",
+   "items": [
+    {
+     "name": "Claude",
+     "verb": "PLAN",
+     "at": "plan"
+    },
+    {
+     "name": "Cursor",
+     "verb": "CODE",
+     "at": "code"
+    },
+    {
+     "name": "Gemini",
+     "verb": "RESEARCH",
+     "at": "research"
+    },
+    {
+     "name": "ChatGPT",
+     "verb": "ASK",
+     "at": "ask"
+    }
+   ]
+  },
+  {
+   "scene": "orbit",
+   "phase": "closed",
+   "items": [
+    {
+     "name": "Claude",
+     "verb": "PLAN"
+    },
+    {
+     "name": "Cursor",
+     "verb": "CODE"
+    },
+    {
+     "name": "Gemini",
+     "verb": "RESEARCH"
+    },
+    {
+     "name": "ChatGPT",
+     "verb": "ASK"
+    }
+   ]
+  },
+  {
+   "scene": "orbit",
+   "phase": "hub",
+   "at": "brings",
+   "flash": true,
+   "items": [
+    {
+     "name": "Claude",
+     "verb": "PLAN"
+    },
+    {
+     "name": "Cursor",
+     "verb": "CODE"
+    },
+    {
+     "name": "Gemini",
+     "verb": "RESEARCH"
+    },
+    {
+     "name": "ChatGPT",
+     "verb": "ASK"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "Use both.",
+   "line2": "Flayel goes everywhere.",
+   "captions": true
+  }
+ ],
+ "pov/3": [
+  {
+   "scene": "kinetic",
+   "text": "*POV:* yesterday. / Two hours. / Long debate. / *Final answer*.",
+   "slam": true
+  },
+  {
+   "scene": "chat",
+   "label": "Today",
+   "title": "New chat",
+   "messages": [
+    {
+     "from": "you",
+     "text": "Let's set up the data layer.",
+     "at": "new"
+    },
+    {
+     "from": "ai",
+     "text": "Have you considered that database?",
+     "at": "considered"
+    }
+   ]
+  },
+  {
+   "scene": "grave",
+   "at": "buried",
+   "ghostAt": "funeral",
+   "title": "You buried it.",
+   "titleAt": "buried"
+  },
+  {
+   "scene": "bucket",
+   "name": "Decisions",
+   "role": "The Ledger",
+   "color": "amber",
+   "flash": true,
+   "members": [
+    {
+     "label": "Decided",
+     "value": "Postgres",
+     "at": "decided"
+    },
+    {
+     "label": "Because",
+     "value": "We need row-level security",
+     "at": "why"
+    },
+    {
+     "label": "Ruled out",
+     "value": "That other database",
+     "at": "ruled"
+    }
+   ]
+  },
+  {
+   "scene": "chat",
+   "title": "New chat · context injected",
+   "messages": [
+    {
+     "from": "you",
+     "text": "Let's set up the data layer.",
+     "at": "inject"
+    },
+    {
+     "from": "ai",
+     "text": "Using Postgres, as decided. The other one stays ruled out.",
+     "at": "knows"
+    }
+   ]
+  },
+  {
+   "scene": "end",
+   "line1": "The debate is over.",
+   "line2": "Flayel remembers."
+  }
+ ],
+ "momentum/3": [
+  {
+   "scene": "bigcheck",
+   "title": "The most satisfying button",
+   "todo": "Ship the billing page"
+  },
+  {
+   "scene": "todo",
+   "flash": true,
+   "todos": [
+    "Ship the billing page",
+    "Write the pricing copy",
+    "Fix the login redirect"
+   ],
+   "tick": 0,
+   "from": 74,
+   "to": 77,
+   "at": "tick"
+  },
+  {
+   "scene": "kinetic",
+   "text": "No waiting. / No AI *deciding*."
+  },
+  {
+   "scene": "streak",
+   "todayAt": "today",
+   "tomorrowAt": "tomorrow",
+   "restAt": "stack"
+  },
+  {
+   "scene": "kinetic",
+   "text": "~Plan harder~. / *Ship something small*.",
+   "slam": true
+  },
+  {
+   "scene": "end",
+   "line1": "One small thing.",
+   "line2": "Every day."
+  }
+ ],
+ "feature/1": [
+  {
+   "scene": "intro"
+  },
+  {
+   "scene": "tools"
+  },
+  {
+   "scene": "forget"
+  },
+  {
+   "scene": "brain",
+   "flash": true
+  },
+  {
+   "scene": "context"
+  },
+  {
+   "scene": "bird"
+  },
+  {
+   "scene": "score"
+  },
+  {
+   "scene": "end"
+  }
+ ]
+}

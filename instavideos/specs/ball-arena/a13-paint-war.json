@@ -1,0 +1,62 @@
+{
+ "id": "a13-paint-war",
+ "idea": "paint-war",
+ "variant": 2,
+ "title": "3 Colours. Who Paints Most?",
+ "subtitle": "every hit paints the wall",
+ "durationSec": 30,
+ "hud": "paint",
+ "seeds": 160,
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 30,
+    "n": 72,
+    "kind": "paint"
+   }
+  ],
+  "balls": [
+   {
+    "name": "Pink",
+    "hex": "#FF6FB5",
+    "r": 24,
+    "speed": 850
+   },
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 24,
+    "speed": 850
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 24,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "win": "most_paint"
+ },
+ "choice": {
+  "label": "Pick a colour"
+ },
+ "payoff": {
+  "paint": "{name} WINS!",
+  "sub": "{pct} of the wall"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 13001,
+ "day": 2
+}

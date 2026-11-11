@@ -1,0 +1,87 @@
+{
+ "id": "a06-colour-escape",
+ "idea": "colour-escape",
+ "variant": 2,
+ "title": "6 Balls, 1 Exit. Who Wins?",
+ "durationSec": 35,
+ "hud": "timer",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 400,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     10
+    ],
+    "rot": -35
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 24,
+    "speed": 800
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 24,
+    "speed": 800
+   },
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 24,
+    "speed": 800
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 24,
+    "speed": 800
+   },
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 24,
+    "speed": 800
+   },
+   {
+    "name": "Orange",
+    "hex": "#FF9F43",
+    "r": 24,
+    "speed": 800
+   }
+  ],
+  "collide": true,
+  "win": "first_escape"
+ },
+ "choice": {
+  "label": "Pick a colour"
+ },
+ "payoff": {
+  "yes": "{name} WINS!",
+  "sub": "Did your colour win?",
+  "no": "NOBODY ESCAPED!"
+ },
+ "prefer": {
+  "outcome": "yes"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 6001,
+ "day": 2
+}

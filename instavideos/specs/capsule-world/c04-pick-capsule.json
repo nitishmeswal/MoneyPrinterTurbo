@@ -1,0 +1,19 @@
+{
+ "id": "c04-pick-capsule",
+ "idea": "pause-to-pick",
+ "variant": 4,
+ "format": "pick-capsule",
+ "title": "Stop On A Capsule!",
+ "designSeed": 151,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 44001,
+ "day": 4
+}

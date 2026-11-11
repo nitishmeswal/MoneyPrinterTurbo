@@ -1,0 +1,19 @@
+{
+ "id": "b14-shells",
+ "idea": "shell-tracker",
+ "variant": 1,
+ "format": "shells",
+ "title": "Can You Track The Ball?",
+ "designSeed": 3,
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 34001,
+ "day": 1
+}

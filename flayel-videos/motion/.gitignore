@@ -1,0 +1,5 @@
+node_modules/
+# Per-video assets (voiceovers, Kling clips, props) are rebuilt by make_video.py
+public/*/
+# ...but the launch films' music, sound effects and logos can't be rebuilt, so keep them
+!public/launch/

@@ -1,0 +1,24 @@
+{
+ "id": "d17-memory",
+ "idea": "memory-flash",
+ "variant": 2,
+ "format": "memory-flash",
+ "title": "Memory Test: How Far?",
+ "lengths": [
+  4,
+  6,
+  8
+ ],
+ "designSeed": 91,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 77001,
+ "day": 2
+}

@@ -1,0 +1,24 @@
+{
+ "id": "d18-memory",
+ "idea": "memory-flash",
+ "variant": 3,
+ "format": "memory-flash",
+ "title": "Repeat The Colours?",
+ "lengths": [
+  3,
+  5,
+  8
+ ],
+ "designSeed": 92,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 78001,
+ "day": 3
+}

@@ -1,0 +1,20 @@
+{
+ "id": "d15-stroop",
+ "idea": "colour-word",
+ "variant": 3,
+ "format": "stroop",
+ "title": "Your Brain Will Glitch?",
+ "count": 25,
+ "designSeed": 82,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 75001,
+ "day": 3
+}

@@ -1,0 +1,11 @@
+{
+ "pillar": "edu",
+ "number": 2,
+ "subject": "Write down what is mocked in your app before your AI builds on it",
+ "voice": "en-US-BrianNeural-Male",
+ "script": "Your AI will happily build on top of fake code. Your payments are mocked, and nobody told it. So it adds receipts, refunds and emails on a foundation that doesn't exist. Then it all falls over. So write down what's mocked, in one line. Payments are fake. Emails don't send yet. Now your AI builds around it, or fixes it first. In Flayel, that line lives in your Progress bucket, under broken or mocked, and it goes into every context you inject. Try Flayel free at flayel dot com.",
+ "seconds": 30.536,
+ "words": 89,
+ "shots": 6,
+ "has_cta": true
+}

@@ -1,0 +1,19 @@
+{
+ "id": "b05-your-number",
+ "idea": "number-force",
+ "variant": 1,
+ "format": "number-force",
+ "title": "I Know Your Number",
+ "add": 10,
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 25001,
+ "day": 1
+}

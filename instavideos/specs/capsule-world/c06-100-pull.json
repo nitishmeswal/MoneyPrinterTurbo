@@ -1,0 +1,18 @@
+{
+ "id": "c06-100-pull",
+ "idea": "100-pull",
+ "variant": 1,
+ "format": "100-pull",
+ "title": "Will We Pull A Mythic?",
+ "seed0": 9001,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "day": 1
+}

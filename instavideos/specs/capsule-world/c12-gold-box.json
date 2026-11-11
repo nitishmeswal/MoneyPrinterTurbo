@@ -1,0 +1,20 @@
+{
+ "id": "c12-gold-box",
+ "idea": "gold-box",
+ "variant": 3,
+ "format": "gold-box",
+ "title": "Where's The Golden One?",
+ "boxes": 3,
+ "gold": 2,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 52001,
+ "day": 3
+}

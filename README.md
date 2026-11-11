@@ -18,6 +18,143 @@
 
 </div>
 
+## Set up this repo with Claude Code 🤖
+
+This copy of [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) (MIT) adds three video projects built on top of it:
+
+| Folder | What it makes | Guide |
+|---|---|---|
+| `flayel-videos/` | 200 vertical Flayel shorts, Kling packs, and 16:9 launch films (Remotion + EffectCraft) | [flayel-videos/README.md](flayel-videos/README.md) |
+| `recaphub-videos/` | Eleven 1920×1080 RecapHub marketing films (Remotion + EffectCraft) | [recaphub-videos/README.md](recaphub-videos/README.md) |
+| `instavideos/` | Shorts for six niche accounts (sims, tricks, reveals), rendered with Remotion | [instavideos/PLAYBOOK.md](instavideos/PLAYBOOK.md) |
+
+### Quick version: let Claude do it
+
+Install [Claude Code](https://code.claude.com/docs), open a terminal in an empty folder, run `claude`, and paste this prompt:
+
+```text
+Clone https://github.com/nitishmeswal/MoneyPrinterTurbo and set it up by following the
+"Set up this repo with Claude Code" section of its README.md, steps 1 to 6, in order.
+Check each step worked before you start the next one. When a step needs an API key or
+account, stop and ask me for it. Never commit config.toml or any .env file.
+```
+
+### Step by step
+
+The commands below are for Windows PowerShell. On macOS or Linux, use `/` in paths and `sh webui.sh` instead of `webui.bat`.
+
+**1. Install the tools**
+
+| Tool | Version | Check with |
+|---|---|---|
+| [Git](https://git-scm.com/) | any | `git --version` |
+| [uv](https://docs.astral.sh/uv/) (installs Python 3.11 for you) | latest | `uv --version` |
+| [Node.js](https://nodejs.org/) (only for the video projects) | 18 or later (tested on 24) | `node -v` |
+| [Claude Code](https://code.claude.com/docs) (only to use your Claude subscription as the script writer) | latest | `claude --version` |
+
+FFmpeg downloads itself on first run. If it doesn't, see "No ffmpeg exe could be found" in [README-en.md](README-en.md).
+
+**2. Clone and install Python dependencies**
+
+```powershell
+git clone https://github.com/nitishmeswal/MoneyPrinterTurbo.git
+cd MoneyPrinterTurbo
+uv python install 3.11
+uv sync --frozen
+```
+
+This creates `.venv\`. The video project commands use `.\.venv\Scripts\python.exe`.
+
+**3. Create `config.toml`**
+
+```powershell
+Copy-Item config.example.toml config.toml
+```
+
+`config.toml` holds your keys and is git-ignored. Fill in at least:
+
+- `pexels_api_keys = ["..."]`: stock footage. Free key at https://www.pexels.com/api/
+- A script writer (LLM). Pick one:
+  - **Claude subscription (Pro / Max / Team), no API key:** set `llm_provider = "claude_code"`, then run `claude` once in a terminal and log in. MoneyPrinterTurbo calls the logged-in `claude` CLI. Leave `claude_code_model_name` empty to use the CLI's default model.
+  - **An API key:** set `llm_provider` to that provider (for example `"openrouter"`) and fill in its `*_api_key`. The Flayel batch scripts use `openrouter_api_key`.
+
+The voice (Edge TTS) needs no key.
+
+**4. Start MoneyPrinterTurbo**
+
+```powershell
+.\webui.bat                          # WebUI: http://127.0.0.1:8501
+.\.venv\Scripts\python.exe main.py   # API (optional): http://127.0.0.1:8080/docs
+```
+
+Make one test video from the command line:
+
+```powershell
+.\.venv\Scripts\python.exe cli.py --video-subject "Why the sky is blue" --video-language en-US
+```
+
+The finished video goes to `storage\tasks\<task-id>\final-1.mp4`.
+
+**Docker option, using your Claude subscription.** A container has no keychain, so the CLI needs a long-lived token:
+
+```bash
+export CLAUDE_CODE_OAUTH_TOKEN="$(claude setup-token)"
+docker compose -f docker-compose.claude.yml up -d --build
+```
+
+**5. Set up the video projects (Remotion)**
+
+Install the Node packages in each `motion` folder:
+
+```powershell
+foreach ($p in 'flayel-videos','instavideos','recaphub-videos') { Push-Location "$p\motion"; npm ci; Pop-Location }
+```
+
+The launch films and RecapHub films are finished in **EffectCraft 0.21.0**. `polish.py` expects its CLI at `flayel-videos\effectcraft-bin\effectcraft-0.21.0-windows-x64-portable\effectcraft-cli.exe`:
+
+```powershell
+New-Item -ItemType Directory -Force flayel-videos\effectcraft-bin | Out-Null
+gh release download v0.21.0 -R storytold/effectcraft -p "effectcraft-0.21.0-windows-x64-portable.zip" -D flayel-videos\effectcraft-bin
+Expand-Archive flayel-videos\effectcraft-bin\effectcraft-0.21.0-windows-x64-portable.zip -DestinationPath flayel-videos\effectcraft-bin
+```
+
+Without the GitHub CLI (`gh`), download the same zip from https://github.com/storytold/effectcraft/releases/tag/v0.21.0. Check that the CLI is in the right place: `Test-Path flayel-videos\effectcraft-bin\effectcraft-0.21.0-windows-x64-portable\effectcraft-cli.exe` should print `True`.
+
+Optional, for Kling shots in the Flayel shorts (paid): create `flayel-videos\.env` with these three lines. It is git-ignored:
+
+```text
+KLING_API_KEY=...        # https://kling.ai/dev/api-key
+KLING_API_BASE=...       # the international API endpoint
+KLING_BUDGET_USD=5       # hard spending cap for one run, in US dollars
+```
+
+**6. Check that it renders**
+
+```powershell
+.\.venv\Scripts\python.exe instavideos\batch.py a01-break-out   # one short -> instavideos\out\
+powershell -File recaphub-videos\render_all.ps1 teaser            # one film  -> recaphub-videos\out\
+```
+
+From here, follow each folder's own guide (table above).
+
+### What isn't in this repo
+
+These are left out to keep the repo small. All of them can be rebuilt or downloaded again:
+
+| Left out | How to get it back |
+|---|---|
+| Rendered videos (`*/out/`, `storage/`) | Run the render commands in each guide |
+| `node_modules/` | `npm ci` (step 5) |
+| `.venv/` | `uv sync --frozen` (step 2) |
+| `flayel-videos/effectcraft-bin/` | Download EffectCraft 0.21.0 (step 5) |
+| Per-video voiceovers and props (`flayel-videos/motion/public/<video>/`, `instavideos/motion/public/{audio,data}/`) | Built by `make_video.py` and `batch.py` |
+| `flayel-videos/remotion/`, `flayel-videos/effectcraft/` (source code, for reference only) | `git clone https://github.com/remotion-dev/remotion` and `git clone https://github.com/storytold/effectcraft` into `flayel-videos/` |
+| `config.toml`, `flayel-videos/.env` | Your own keys (steps 3 and 5) |
+
+`flayel-videos\make_video.py` refreshes the Flayel logo from a path on the original machine (`LOGO` at the top of the file) when that path exists. Otherwise it uses `flayel-videos\motion\public\flayel-mark.png`, which is in the repo.
+
+---
+
 ## 界面预览 🖥️
 
 <h4 align="center">WebUI</h4>

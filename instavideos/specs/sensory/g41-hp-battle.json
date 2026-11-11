@@ -1,0 +1,77 @@
+{
+ "idea": "hp-battle",
+ "title": "5 Balls Enter. One Wins.",
+ "subtitle": "harder hits do more damage",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 40,
+ "hud": "hp",
+ "seeds": 200,
+ "prefer": {
+  "outcome": "battle",
+  "reason": null
+ },
+ "rules": {
+  "gravity": 300,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 32,
+    "speed": 800
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 32,
+    "speed": 800
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 32,
+    "speed": 800
+   },
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 32,
+    "speed": 800
+   },
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 32,
+    "speed": 800
+   }
+  ],
+  "collide": true,
+  "hp": 100,
+  "dmg_k": 0.012,
+  "win": "battle"
+ },
+ "payoff": {
+  "battle": "{name} WINS!",
+  "sub": "{hp} HP left"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g41-hp-battle",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 161001,
+ "day": 5
+}

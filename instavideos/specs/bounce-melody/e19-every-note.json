@@ -1,0 +1,88 @@
+{
+ "id": "e19-every-note",
+ "idea": "piano-ring",
+ "variant": 5,
+ "title": "Every Note Before Time's Up?",
+ "subtitle": "each colour plays its own note",
+ "durationSec": 35,
+ "hud": "lit",
+ "seeds": 200,
+ "instrument": "bell",
+ "scale": [
+  48,
+  50,
+  52,
+  55,
+  57,
+  60,
+  62,
+  64,
+  67,
+  69,
+  72,
+  74,
+  76,
+  79,
+  81,
+  84,
+  86,
+  88,
+  91,
+  93,
+  96,
+  98,
+  100,
+  103
+ ],
+ "rules": {
+  "gravity": 1150,
+  "rings": [
+   {
+    "R": 400,
+    "w": 30,
+    "n": 24,
+    "kind": "notes",
+    "rot": 35
+   }
+  ],
+  "balls": [
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 22,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "win": "all_notes"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ALL 24 NOTES!",
+  "no": "TIME'S UP!",
+  "sub": "Did you call it?"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 99001,
+ "day": 5
+}

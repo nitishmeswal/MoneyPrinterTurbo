@@ -1,0 +1,71 @@
+{
+ "idea": "hp-battle",
+ "title": "Ball HP Battle: Who Wins?",
+ "subtitle": "harder hits do more damage",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 40,
+ "hud": "hp",
+ "seeds": 200,
+ "prefer": {
+  "outcome": "battle",
+  "reason": null
+ },
+ "rules": {
+  "gravity": 300,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Red",
+    "hex": "#FF4D4D",
+    "r": 34,
+    "speed": 800
+   },
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 34,
+    "speed": 800
+   },
+   {
+    "name": "Green",
+    "hex": "#3DDC84",
+    "r": 34,
+    "speed": 800
+   },
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 34,
+    "speed": 800
+   }
+  ],
+  "collide": true,
+  "hp": 100,
+  "dmg_k": 0.012,
+  "win": "battle"
+ },
+ "payoff": {
+  "battle": "{name} WINS!",
+  "sub": "{hp} HP left"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g37-hp-battle",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 157001,
+ "day": 1
+}

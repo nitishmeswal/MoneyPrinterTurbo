@@ -1,0 +1,145 @@
+{
+ "id": "e12-song-escape",
+ "idea": "escape-before-song-ends",
+ "variant": 4,
+ "title": "Escape Before The Song Ends?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Old MacDonald",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 260,
+ "instrument": "bell",
+ "rules": {
+  "gravity": 1220,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720,
+    "gap": [
+     210,
+     9.5
+    ],
+    "rot": -45
+   }
+  ],
+  "balls": [
+   {
+    "name": "Blue",
+    "hex": "#4D9DFF",
+    "r": 21,
+    "speed": 880
+   }
+  ],
+  "melody": [
+   67,
+   67,
+   67,
+   62,
+   64,
+   64,
+   62,
+   71,
+   71,
+   69,
+   69,
+   67,
+   62,
+   67,
+   67,
+   67,
+   62,
+   64,
+   64,
+   62,
+   71,
+   71,
+   69,
+   69,
+   67,
+   67,
+   67,
+   67,
+   62,
+   64,
+   64,
+   62,
+   71,
+   71,
+   69,
+   69,
+   67,
+   62,
+   67,
+   67,
+   67,
+   62,
+   64,
+   64,
+   62,
+   71,
+   71,
+   69,
+   69,
+   67,
+   67,
+   67,
+   67,
+   62,
+   64,
+   64,
+   62,
+   71,
+   71,
+   69,
+   69,
+   67,
+   62,
+   67,
+   67,
+   67,
+   62,
+   64,
+   64,
+   62,
+   71,
+   71,
+   69,
+   69,
+   67
+  ],
+  "melody_len": 75,
+  "win": "song_escape"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ESCAPED!",
+  "no": "SONG OVER!",
+  "sub": "The song: {song}"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 92001,
+ "day": 4
+}

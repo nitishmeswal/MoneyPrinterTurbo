@@ -1,0 +1,11 @@
+{
+ "pillar": "momentum",
+ "number": 2,
+ "subject": "Why Flayel's Ship Score is calculated, not guessed by AI",
+ "voice": "en-US-AndrewNeural-Male",
+ "script": "Ask an AI to rate your project, and it'll say whatever you want to hear. Say please, and it's a hundred. That's why Flayel's Ship Score isn't an AI's opinion. It's calculated from what you did: memory you filled, sessions you logged and how recent they are, todos you finished, milestones you hit, and real traction. Same inputs, same score, every time. So when it moves, it means something. Try Flayel free at flayel dot com.",
+ "seconds": 24.81,
+ "words": 76,
+ "shots": 6,
+ "has_cta": true
+}

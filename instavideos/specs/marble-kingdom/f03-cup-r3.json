@@ -1,0 +1,118 @@
+{
+ "id": "f03-cup-r3",
+ "idea": "countries-cup",
+ "variant": 3,
+ "title": "Quarterfinal: Who Goes Through?",
+ "subtitle": "first 4 out go through",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "prefer": {
+  "timer": null
+ },
+ "hud": "race",
+ "advance": 4,
+ "advanceLabel": "through",
+ "seeds": 200,
+ "series": "COUNTRIES CUP",
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": 7
+   }
+  ],
+  "balls": [
+   {
+    "flag": "BR",
+    "name": "BR",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "AR",
+    "name": "AR",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "FR",
+    "name": "FR",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "DE",
+    "name": "DE",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "ES",
+    "name": "ES",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "IT",
+    "name": "IT",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "GB",
+    "name": "GB",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   },
+   {
+    "flag": "US",
+    "name": "US",
+    "hex": "#FFFFFF",
+    "r": 27,
+    "speed": 780
+   }
+  ],
+  "collide": true,
+  "win": "race",
+  "advance": 4
+ },
+ "choice": {
+  "label": "Pick your country"
+ },
+ "payoff": {
+  "race": "{name} FIRST OUT!",
+  "sub": "Part {next} tomorrow",
+  "next": 4
+ },
+ "fromPrev": {
+  "id": "f02-cup-r2",
+  "take": 8
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 103001,
+ "day": 3
+}

@@ -1,0 +1,108 @@
+{
+ "id": "e05-name-song",
+ "idea": "name-the-song",
+ "variant": 5,
+ "title": "Can You Name This Song?",
+ "subtitle": "every bounce plays the next note",
+ "song": "Mary Had a Little Lamb",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 45,
+ "hud": "melody",
+ "seeds": 200,
+ "instrument": "bell",
+ "rules": {
+  "gravity": 950,
+  "rings": [
+   {
+    "R": 400,
+    "w": 14,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "Orange",
+    "hex": "#FF9F43",
+    "r": 16,
+    "speed": 700
+   }
+  ],
+  "grow": 1.0487356494137738,
+  "melody": [
+   64,
+   62,
+   60,
+   62,
+   64,
+   64,
+   64,
+   62,
+   62,
+   62,
+   64,
+   67,
+   67,
+   64,
+   62,
+   60,
+   62,
+   64,
+   64,
+   64,
+   64,
+   62,
+   62,
+   64,
+   62,
+   60,
+   64,
+   62,
+   60,
+   62,
+   64,
+   64,
+   64,
+   62,
+   62,
+   62,
+   64,
+   67,
+   67,
+   64,
+   62,
+   60,
+   62,
+   64,
+   64,
+   64,
+   64,
+   62,
+   62,
+   64,
+   62,
+   60
+  ],
+  "melody_len": 52,
+  "win": "fill"
+ },
+ "choice": {
+  "label": "Comment your guess",
+  "options": []
+ },
+ "payoff": {
+  "yes": "{song}",
+  "sub": "Did you get it?"
+ },
+ "account": "bounce-melody",
+ "engine": "sim",
+ "music": {
+  "bpm": 96,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.2
+ },
+ "seed0": 85001,
+ "day": 5
+}

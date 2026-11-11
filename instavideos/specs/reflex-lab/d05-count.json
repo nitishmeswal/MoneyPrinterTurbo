@@ -1,0 +1,25 @@
+{
+ "id": "d05-count",
+ "idea": "count-the-balls",
+ "variant": 1,
+ "format": "count-balls",
+ "title": "Count Them In 1 Second?",
+ "counts": [
+  9,
+  17,
+  28
+ ],
+ "flash": 1.0,
+ "designSeed": 40,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 65001,
+ "day": 1
+}

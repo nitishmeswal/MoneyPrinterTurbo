@@ -1,0 +1,20 @@
+{
+ "id": "c11-gold-box",
+ "idea": "gold-box",
+ "variant": 2,
+ "format": "gold-box",
+ "title": "Pick A Box. Gold Or Empty?",
+ "boxes": 3,
+ "gold": 0,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 51001,
+ "day": 2
+}

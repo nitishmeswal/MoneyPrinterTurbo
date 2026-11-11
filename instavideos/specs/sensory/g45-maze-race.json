@@ -1,0 +1,30 @@
+{
+ "idea": "maze-race",
+ "engine": "maze",
+ "title": "Which Algorithm Solves The Maze?",
+ "subtitle": "same maze, same speed",
+ "seeds": 400,
+ "rules": {
+  "n": 16,
+  "loops": 0.06,
+  "winnerSec": 13,
+  "capSec": 24,
+  "startSec": 1.4
+ },
+ "payoff": {
+  "win": "{name} WINS!",
+  "sub": "{steps} cells checked"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g45-maze-race",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 165001,
+ "day": 1
+}

@@ -1,0 +1,20 @@
+{
+ "id": "c10-gold-box",
+ "idea": "gold-box",
+ "variant": 1,
+ "format": "gold-box",
+ "title": "Which Box Has The Gold?",
+ "boxes": 3,
+ "gold": 1,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 50001,
+ "day": 1
+}

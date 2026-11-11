@@ -1,0 +1,162 @@
+{
+ "id": "recaphub-story",
+ "music": "launch/music-rh-story.wav",
+ "bpm": 116,
+ "musicOffset": 0,
+ "tail": 1.6,
+ "lead": true,
+ "pulse": 0.008,
+ "fadeIn": 1,
+ "flashBeats": [],
+ "scenes": [
+  {
+   "id": "message",
+   "beat": 0,
+   "beats": 8,
+   "exit": "zoom"
+  },
+  {
+   "id": "problem",
+   "beat": 8,
+   "beats": 12,
+   "exit": "cut"
+  },
+  {
+   "id": "turn",
+   "beat": 20,
+   "beats": 8,
+   "exit": "cut"
+  },
+  {
+   "id": "connect",
+   "beat": 28,
+   "beats": 12,
+   "exit": "push",
+   "cue": "flash"
+  },
+  {
+   "id": "ask",
+   "beat": 40,
+   "beats": 16,
+   "exit": "zoom",
+   "cue": "leak"
+  },
+  {
+   "id": "cite",
+   "beat": 56,
+   "beats": 12,
+   "exit": "whip",
+   "cue": "leak"
+  },
+  {
+   "id": "reply",
+   "beat": 68,
+   "beats": 12,
+   "exit": "zoom",
+   "cue": "leak"
+  },
+  {
+   "id": "lesson",
+   "beat": 80,
+   "beats": 12,
+   "exit": "cut"
+  },
+  {
+   "id": "end",
+   "beat": 92,
+   "beats": 8,
+   "exit": "end",
+   "cue": "flash"
+  }
+ ],
+ "accents": [
+  [
+   14.483,
+   0.42
+  ],
+  [
+   14.483,
+   0.85
+  ],
+  [
+   14.483,
+   1.0
+  ],
+  [
+   16.552,
+   0.42
+  ],
+  [
+   18.621,
+   0.42
+  ],
+  [
+   20.69,
+   0.42
+  ],
+  [
+   22.759,
+   0.42
+  ],
+  [
+   24.828,
+   0.42
+  ],
+  [
+   26.897,
+   0.42
+  ],
+  [
+   28.966,
+   0.42
+  ],
+  [
+   28.966,
+   0.8
+  ],
+  [
+   31.034,
+   0.42
+  ],
+  [
+   33.103,
+   0.42
+  ],
+  [
+   35.172,
+   0.42
+  ],
+  [
+   37.241,
+   0.42
+  ],
+  [
+   39.31,
+   0.42
+  ],
+  [
+   41.379,
+   0.42
+  ],
+  [
+   43.448,
+   0.42
+  ],
+  [
+   45.517,
+   0.42
+  ],
+  [
+   47.586,
+   0.85
+  ],
+  [
+   47.586,
+   1.0
+  ],
+  [
+   49.655,
+   0.7
+  ]
+ ]
+}

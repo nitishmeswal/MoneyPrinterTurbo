@@ -1,0 +1,19 @@
+{
+ "id": "b08-your-number",
+ "idea": "number-force",
+ "variant": 4,
+ "format": "number-force",
+ "title": "I Can Read Your Mind",
+ "add": 18,
+ "account": "mind-reader",
+ "engine": "trick",
+ "music": {
+  "bpm": 84,
+  "root": 45,
+  "mode": "dark",
+  "style": "soft",
+  "gain": 0.26
+ },
+ "seed0": 28001,
+ "day": 4
+}

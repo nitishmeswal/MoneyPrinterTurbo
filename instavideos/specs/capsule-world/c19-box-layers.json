@@ -1,0 +1,26 @@
+{
+ "id": "c19-box-layers",
+ "idea": "mystery-layers",
+ "variant": 1,
+ "format": "box-layers",
+ "title": "What's In The Last Box?",
+ "tier": "Epic",
+ "layers": [
+  "kraft",
+  "velvet",
+  "glass",
+  "gold"
+ ],
+ "designSeed": 700,
+ "account": "capsule-world",
+ "engine": "reveal",
+ "music": {
+  "bpm": 104,
+  "root": 48,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "seed0": 59001,
+ "day": 1
+}

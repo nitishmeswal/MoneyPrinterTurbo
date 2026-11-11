@@ -1,0 +1,90 @@
+{
+ "id": "f04-cup-r4",
+ "idea": "countries-cup",
+ "variant": 4,
+ "title": "Semifinal: Who Makes The Final?",
+ "subtitle": "first 2 out go through",
+ "durationSec": "auto",
+ "minSec": 22,
+ "maxSec": 45,
+ "prefer": {
+  "timer": null
+ },
+ "hud": "race",
+ "advance": 2,
+ "advanceLabel": "through",
+ "seeds": 200,
+ "series": "COUNTRIES CUP",
+ "rules": {
+  "gravity": 1200,
+  "rings": [
+   {
+    "R": 405,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     270,
+     18
+    ],
+    "rot": -7
+   }
+  ],
+  "balls": [
+   {
+    "flag": "BR",
+    "name": "BR",
+    "hex": "#FFFFFF",
+    "r": 30,
+    "speed": 780
+   },
+   {
+    "flag": "AR",
+    "name": "AR",
+    "hex": "#FFFFFF",
+    "r": 30,
+    "speed": 780
+   },
+   {
+    "flag": "FR",
+    "name": "FR",
+    "hex": "#FFFFFF",
+    "r": 30,
+    "speed": 780
+   },
+   {
+    "flag": "DE",
+    "name": "DE",
+    "hex": "#FFFFFF",
+    "r": 30,
+    "speed": 780
+   }
+  ],
+  "collide": true,
+  "win": "race",
+  "advance": 2
+ },
+ "choice": {
+  "label": "Pick your country"
+ },
+ "payoff": {
+  "race": "{name} FIRST OUT!",
+  "sub": "Part {next} tomorrow",
+  "next": 5
+ },
+ "fromPrev": {
+  "id": "f03-cup-r3",
+  "take": 4
+ },
+ "account": "marble-kingdom",
+ "engine": "sim",
+ "music": {
+  "bpm": 128,
+  "root": 43,
+  "mode": "major",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "pluck",
+ "seed0": 104001,
+ "day": 4
+}

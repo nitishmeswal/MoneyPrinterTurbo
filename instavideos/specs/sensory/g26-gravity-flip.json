@@ -1,0 +1,75 @@
+{
+ "idea": "gravity-flip",
+ "title": "Gravity Flips! Who Gets Out?",
+ "subtitle": "gravity turns on every bounce",
+ "durationSec": "auto",
+ "minSec": 20,
+ "maxSec": 40,
+ "hud": "gravity",
+ "seeds": 200,
+ "prefer": {
+  "timer": null
+ },
+ "rules": {
+  "gravity": 1300,
+  "gravity_flip": true,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720,
+    "gap": [
+     90,
+     11
+    ],
+    "rot": -30
+   }
+  ],
+  "balls": [
+   {
+    "name": "Yellow",
+    "hex": "#FFD23F",
+    "r": 22,
+    "speed": 850
+   },
+   {
+    "name": "Purple",
+    "hex": "#B07CFF",
+    "r": 22,
+    "speed": 850
+   },
+   {
+    "name": "Cyan",
+    "hex": "#2EE6D6",
+    "r": 22,
+    "speed": 850
+   },
+   {
+    "name": "Orange",
+    "hex": "#FF9F43",
+    "r": 22,
+    "speed": 850
+   }
+  ],
+  "collide": true,
+  "win": "first_escape"
+ },
+ "payoff": {
+  "yes": "{name} WINS!",
+  "no": "STILL TRAPPED!",
+  "sub": "Did your colour win?"
+ },
+ "music": {
+  "bpm": 112,
+  "root": 47,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.32
+ },
+ "id": "g26-gravity-flip",
+ "engine": "sim",
+ "instrument": "marimba",
+ "account": "sensory",
+ "seed0": 146001,
+ "day": 5
+}

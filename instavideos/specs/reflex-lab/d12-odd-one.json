@@ -1,0 +1,34 @@
+{
+ "id": "d12-odd-one",
+ "idea": "odd-one-out",
+ "variant": 4,
+ "format": "odd-one",
+ "title": "Can You Find It In 4s?",
+ "shape": "star",
+ "grids": [
+  [
+   5,
+   0.16
+  ],
+  [
+   6,
+   0.1
+  ],
+  [
+   8,
+   0.065
+  ]
+ ],
+ "designSeed": 63,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 72001,
+ "day": 4
+}

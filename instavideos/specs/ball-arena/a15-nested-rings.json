@@ -1,0 +1,103 @@
+{
+ "id": "a15-nested-rings",
+ "idea": "nested-rings",
+ "variant": 1,
+ "title": "Can It Escape 5 Rings?",
+ "durationSec": 35,
+ "hud": "layers",
+ "seeds": 200,
+ "rules": {
+  "gravity": 1100,
+  "rings": [
+   {
+    "R": 160,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     90,
+     30
+    ],
+    "rot": -30
+   },
+   {
+    "R": 220,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     160,
+     30
+    ],
+    "rot": 39
+   },
+   {
+    "R": 280,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     230,
+     30
+    ],
+    "rot": -48
+   },
+   {
+    "R": 340,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     300,
+     30
+    ],
+    "rot": 57
+   },
+   {
+    "R": 400,
+    "w": 12,
+    "n": 720,
+    "gap": [
+     370,
+     30
+    ],
+    "rot": -66
+   }
+  ],
+  "balls": [
+   {
+    "name": "White",
+    "hex": "#F2F2F2",
+    "r": 15,
+    "speed": 900
+   }
+  ],
+  "win": "all_rings"
+ },
+ "choice": {
+  "label": "Yes or no?",
+  "options": [
+   {
+    "text": "YES",
+    "color": "#3DDC84"
+   },
+   {
+    "text": "NO",
+    "color": "#FF4D4D"
+   }
+  ]
+ },
+ "payoff": {
+  "yes": "ALL {n} RINGS!",
+  "no": "STUCK AT {layers}/{n}",
+  "sub": "Did you call it?"
+ },
+ "account": "ball-arena",
+ "engine": "sim",
+ "music": {
+  "bpm": 120,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.34
+ },
+ "instrument": "marimba",
+ "seed0": 15001,
+ "day": 1
+}

@@ -1,0 +1,55 @@
+{
+ "idea": "ball-drawing",
+ "title": "Guess The Flag Before It's Revealed",
+ "subtitle": "the ball reveals it as it bounces",
+ "durationSec": 28,
+ "hud": "reveal",
+ "seeds": 200,
+ "flag": "BR",
+ "pctRange": [
+  0.42,
+  0.7
+ ],
+ "rules": {
+  "gravity": 1000,
+  "rings": [
+   {
+    "R": 410,
+    "w": 16,
+    "n": 720
+   }
+  ],
+  "balls": [
+   {
+    "name": "White",
+    "hex": "#F2F2F2",
+    "r": 24,
+    "speed": 900
+   }
+  ],
+  "collide": true,
+  "grid": {
+   "cell": 6,
+   "mode": "reveal",
+   "brush": 1.25
+  },
+  "win": "reveal"
+ },
+ "payoff": {
+  "reveal": "{flagname}!",
+  "sub": "Did you guess it?"
+ },
+ "music": {
+  "bpm": 92,
+  "root": 50,
+  "mode": "major",
+  "style": "soft",
+  "gain": 0.24
+ },
+ "instrument": "pluck",
+ "id": "g32-ball-drawing",
+ "engine": "sim",
+ "account": "sensory",
+ "seed0": 152001,
+ "day": 1
+}

@@ -1,0 +1,25 @@
+{
+ "id": "d08-count",
+ "idea": "count-the-balls",
+ "variant": 4,
+ "format": "count-balls",
+ "title": "Count Before They Vanish?",
+ "counts": [
+  12,
+  22,
+  36
+ ],
+ "flash": 1.2,
+ "designSeed": 43,
+ "account": "reflex-lab",
+ "engine": "reflex",
+ "music": {
+  "bpm": 124,
+  "root": 45,
+  "mode": "minor",
+  "style": "drive",
+  "gain": 0.26
+ },
+ "seed0": 68001,
+ "day": 4
+}
