@@ -1,0 +1,123 @@
+Yes. Without planning it as one product, we've built a single repeatable video maker. Every project uses the same five steps. What changes between projects is which engine fills each step.
+
+The pipeline every project shares
+
+1. SPEC / SCRIPT   ->  2. ENGINE (Python)   ->  3. MOTION (Remotion/React)  ->  4. RENDER     ->  5. FINISH (ffmpeg)
+   what to make         makes the data,          draws the data as frames       batch it         grade, loudness,
+   (JSON or text)       art, voice, sound                                                        encode -> out/
+That's why every project ends up with the same folders.
+
+Folder	Holds
+specs/, episodes/ or stories/	Step 1: one JSON or text file per video, with all the on-screen text
+engine/	Step 2: physics, art, voice and sound
+motion/	Step 3: the Remotion project
+batch.py, run_*.ps1 or render_all.ps1	Step 4
+finish.py or polish.py	Step 5
+out/	Finished videos
+posts.csv	Captions and hashtags ready to post
+How each project fills the five steps:
+
+Project	Step 2: engine	Step 3: what draws the frames	Step 5: finish
+Instavideos (and viral-shorts, weapon-wars)	Physics sims tried over many random seeds; the most dramatic run is kept. All sound and music are synthesised in code.	Remotion draws the sim data	ffmpeg grade, −14 LUFS, encoded on the GPU (NVENC)
+Panchtantra	FLUX paints the art on your GPU; CLIP picks the best image; edge-tts narrates	A custom GPU compositor (PyTorch on CUDA), not Remotion	NVENC
+Known Issues	Same FLUX art pipeline, plus edge-tts voices and a synth score	A custom Python/PIL compositor on the CPU	CPU encode (x264)
+Promo films (RecapHub, Flayel)	Real product captures, beat-timed scripts, synth music	Remotion films built on a beat grid	EffectCraft polish or ffmpeg
+Frame-rendered series (physics-vault, chemistry-lab, blender-fusion)	shortkit/kit.py shared helpers; Blender for the 3D	Python writes frames straight to ffmpeg	daily-posts/seamless.py makes each short loop with no restart pause
+CPU or GPU?
+It's a mix, and it changed over time:
+
+GPU:
+FLUX image generation (D:\panchtantra-env, as in my last answer).
+The Panchtantra compositor.
+NVENC for the final encode in Instavideos, viral-shorts and weapon-wars.
+Chrome's drawing in Remotion (gl: angle).
+CPU:
+The physics sims and synthesised audio.
+The Known Issues compositor.
+Most of Remotion. Remotion takes a screenshot in Chrome for every frame, and the CPU is the bottleneck there; the GPU sits around 10%.
+Earlier: the finish step was x264 on the CPU. Moving it to NVENC was the "shift to GPU".
+Not local at all: the voices (edge-tts) come from Microsoft's online neural voice service.
+On "200 videos in 5 minutes": that isn't what happens. The measured figure in instavideos/CLAUDE.md is about 33 s to render plus 14 s to finish per short. The two steps overlap, so 161 shorts take about 1.5 hours. That's still fast, about 35 seconds per short unattended, but nowhere near 5 minutes for 200. Running more than 8 render tabs didn't help, because the CPU is the limit.
+
+The gap with the Teamble video, honestly
+You're right that cutting it frame by frame won't close it; I tried that twice. Our films are good data-driven video. Teamble is hand-animated motion design, and that's a different kind of work. Here's what it has that ours don't:
+
+Every element moves on its own. In Teamble, inside one shot the card arrives, then its avatar pops, the text types, the counter ticks and the button pulses, all staggered over a few frames. Ours usually move the whole screenshot with one zoom or crop. That's the biggest difference you feel.
+Easing tuned per move. A motion designer adjusts the curve of each move: a little overshoot, a soft landing, a held moment. We reuse the same spring everywhere, which reads as "template".
+Real motion blur. Every camera move and the cursor get blurred in proportion to speed. We have never turned it on. Remotion has @remotion/motion-blur, but it makes renders 5–10× slower.
+A designed camera and transitions. One continuous camera with depth between layers, and every cut is a designed match cut (an element becomes the next shot). Ours are mostly hard cuts and fades.
+Produced music, edited to the picture, plus dense sound effects. Their music comes from a professional library and is cut to the shots; there's a whoosh, click or pop on almost every event. Ours is synthesised in numpy with few effects. Sound is roughly half of the "expensive" feel.
+3D assets. The glossy cursor and orb are real 3D renders. We have Blender for this but haven't made them yet.
+The review loop. This is the real one. An editor watches a shot at full speed, nudges it by 2 frames, and repeats hundreds of times. I review mostly from still contact sheets, then render once. Stills can't show timing or easing, and those are exactly where the polish lives.
+So it's not missing software. It's design (simplified UI pieces; now done in the style frames, matched to your brand), motion craft (points 1–4), sound (point 5) and the iteration loop (point 7).
+
+How I'd close it
+Animatic: the approved style frames placed on the music's beats, to lock timing before any polish.
+One shot at a time: build each shot with every element animated separately. Render a 3–5 s clip and put it side by side with the matching Teamble clip, then tune timing and easing until the two feel the same, before moving on. This replaces my still-only checks.
+Turn on motion blur for the final render only.
+Sound: a licensed track you approve, plus a real SFX library placed on every event.
+Blender: render the 3D cursor and logo on the 5070.
+Points 1–3 and 5 I can do. Point 4 needs you to pick and license the music. The judgement "does it feel right" needs your eyes on the side-by-side clips, which is where a real editor's taste comes in.
+
+If you want, I can:
+
+Write this up as VIDEO-STUDIO.md at the repo root: one guide covering the five steps, which engine to use for which kind of video, and the commands.
+Start the promo film with step 1 (the animatic) and step 2 on two shots, so you can judge the side-by-side quality before I do all 28.
+
+
+I've built the new pipeline in recaphub-promo/ and rendered all 12 promo films with it. recaphub-videos/ is untouched, so you can compare old and new side by side. The films are in recaphub-promo/out/ as recaphub-<topic>.mp4.
+
+The films (each topic in a different format, as in the old folder, plus one new flagship):
+
+Film	Format	Length
+Launch (new)	Continuous product story from the approved design frames	95 s
+Teaser	Logo reveal and a three-beat montage	25 s
+Shorts	Process film on the four-step timeline	40 s
+Story	MCP explainer as a story: Monday 9:02 to 9:06	56 s
+Pages	The real event page builds itself in a browser	37 s
+Press	Newsroom feed	37 s
+Intel	Data film	37 s
+MCP	Chat demo	29 s
+Live	Countdown film	31 s
+Drive	Flow from sources into RecapHub	35 s
+Analytics	Stats film	31 s
+Publish	Three-step tutorial	47 s
+Live and Analytics carry the same holds as before. Live waits for Prakhar to confirm what's live today. Analytics waits for #436, and every number in it is tagged "Preview · illustrative numbers".
+
+What's new in the pipeline:
+
+Brand: everything uses your brand doc.
+Continuity: shots overlap and hand over with designed transitions instead of hard cuts: whips, the brand-gradient wipe, push-ins, and dives into an element.
+Motion: every element arrives on its own, with its own easing. Product pieces move inside: timers tick, the real 9-check QC list ticks, answers stream, buttons get clicked.
+Camera: it has depth (backgrounds move slower than the UI) and is never fully still.
+Motion blur on fast moves, like a film camera.
+Sound: a sound effect on every event, from a library of 20 that I generated in code.
+Cursor: a solid 3D-looking cursor that arcs, leans, squashes on a click and ripples.
+Real product: real captures, recordings and reels are used wherever they exist.
+How it compares with Teamble, measured from the files:
+
+Frames with no movement	Motion per frame
+Teamble	6.1%	3.37
+Old films	51–79%	0.83–2.94
+New films	1.6–7.1% (Story 13%)	1.17–1.93
+The dead holds that made the old films feel like templates are gone. The remaining gap is motion per frame: Teamble throws whole screens across the frame on most beats, and our moves are shorter and calmer. I can push further, but beyond this point it starts to look frantic, so I'd rather you judge it in the actual videos first.
+
+How I checked it: every film went through review sheets, and I fixed what they showed: cropped headlines, camera pushes that were too strong, overlapping rows, overflowing cards, and a camera bug. Strips of the transitions confirmed the motion blur, and every film is mastered to about −15.4 LUFS, so they are all equally loud.
+
+Decisions I made for you:
+
+White box behind key words on the gradients.
+Black RecapHub logo.
+The made-up Northwind Summit event, plus real reels.
+Orange "Book a demo" end card, with no QR code.
+All four are easy to change.
+
+What only you can add to close the rest of the gap:
+
+A licensed music track at the same tempo; it drops in with nothing else changing.
+The official recaphub.co QR code for the end card.
+The four recordings still missing from recaphub-videos/RECORDINGS.md.
+Optionally, a real 3D cursor rendered in Blender.
+To make more films: recaphub-promo/README.md describes the films and results, and CLAUDE.md is the step-by-step pipeline. To re-render everything, run powershell -File recaphub-promo\render.ps1; add -Draft for a quick timing check.
+
+I haven't committed anything, so the git side is yours.

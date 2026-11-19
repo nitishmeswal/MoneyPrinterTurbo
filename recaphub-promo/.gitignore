@@ -1,0 +1,5 @@
+# rendered films are rebuilt by render.ps1 (large files)
+out/
+motion/node_modules/
+review/_tmp_*/
+review/compare-*.mp4
